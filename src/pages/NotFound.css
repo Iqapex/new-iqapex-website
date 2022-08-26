@@ -1,0 +1,27 @@
+.notfound{
+    display: grid;
+    place-items: center;
+}
+
+.notfound h1{
+    text-align: center;
+    font-family: var(--josefinsans-font);
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.notfound a{
+    font-size: 16px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.notfound a:hover{
+    border-bottom: 2px solid var(--secondary-color);
+}

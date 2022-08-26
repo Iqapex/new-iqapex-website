@@ -1,0 +1,39 @@
+.careers{
+    width: 90%;
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+    margin: 2rem auto 3rem;
+    background-color: #fbfbfbe0;
+}
+
+.careers h1{
+    text-align: center;
+}
+
+.post-title{
+    font-family: var(--poppins-font);
+    font-weight: 700;
+}
+
+.post-title span{
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-family: var(--montserrat-font);
+}
+
+@media screen and (max-width: 768px) {
+    .careers{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .careers{
+        width: 90%;
+    }
+}

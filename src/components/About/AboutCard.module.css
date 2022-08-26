@@ -1,0 +1,173 @@
+.card{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgba(0,0,0,0.05);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1)
+                inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+                inset 0 45px 0 rgba(0,0,0,0.15);
+    margin: 1rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 15px 0 #fff,
+                inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+                inset 0 45px 0 rgba(0,0,0,0.15); */
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.card:nth-child(1){
+    border-bottom: 4px solid var(--about-color-1);
+}
+
+.card:nth-child(2){
+    border-bottom: 4px solid var(--about-color-2);
+}
+
+.card:nth-child(3){
+    border-bottom: 4px solid var(--about-color-3);
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -30%;
+    height: 150%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+    transform: rotate(45deg);
+    transition: all 0.4s;
+    filter: blur(1px);
+}
+
+.card:hover{
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+}
+
+.card:nth-child(1):hover{
+    background-color: var(--about-color-1);
+}
+
+.card:nth-child(2):hover{
+    background-color: var(--about-color-2);
+}
+
+.card:nth-child(3):hover{
+    background-color: var(--about-color-3);
+}
+
+.card:hover:before{
+    left: 0%;
+    width: 120%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6));
+    transform: rotate(300deg);
+}
+
+.card:hover .content{
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(254, 254, 254, 0.3));
+    padding: 0 1rem 1rem;
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 90px;
+    background-color: #f7f7f7;
+    box-shadow: 0 15px 0 #f7f7f7,
+                inset 0 -15px 0 rgba(255,255,255,0.2),
+                0 25px 0 rgba(0,0,0,0.1);
+    /* background: transparent; */
+    border-radius: 0 0 50% 50%;
+}
+
+.card:hover .icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px -15px 0 15px #f7f7f7;
+    transition: 0.5s;
+}
+
+.card:hover .icon::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px -15px 0 15px #fbfbfb;
+    transition: 0.5s;
+}
+
+.icon svg{
+    position: relative;
+    font-size: 1rem;
+    /* color: rgb(198, 223, 232); */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 0.9s linear infinite alternate;
+}
+
+.card:nth-child(1) .icon svg{
+    color: var(--about-color-1);
+}
+
+.card:nth-child(2) .icon svg{
+    color: var(--about-color-2);
+}
+
+.card:nth-child(3) .icon svg{
+    color: var(--about-color-3);
+}
+
+@keyframes animate {
+    100%{
+        font-size: 4rem;
+    }
+}
+
+.card .content{
+    position: absolute;
+    top:25%;
+    width: 90%;
+    text-align: center;
+}
+
+.card h1{
+    margin: 1rem auto;
+    letter-spacing: 1.1px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--nunito-font);
+}
+
+.text{
+    text-align: center;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 525px) {
+    .card{
+        height: 420px;
+        margin: 0 auto;
+    }
+    .content{
+        width: 98% !important;
+    }
+}

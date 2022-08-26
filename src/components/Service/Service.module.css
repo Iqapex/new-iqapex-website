@@ -1,0 +1,162 @@
+.section{
+  position: relative;
+  background: url(../../assets/vector/service.png) center no-repeat;
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 8rem;
+    /* min-height: 60vh; */
+    /* background: linear-gradient(rgba(255,255,255,0.4), rgba(254, 254, 254, 0.6)), url(../../assets/img/circle.png) no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+    /* background: linear-gradient(rgba(255,255,255,0.3), rgba(254, 254, 254, 0.5)); */
+    /* box-shadow: inset 1px 1px 6px 12px rgba(0,0,0,0.3),
+                1px 1px 6px 12px rgba(0,0,0,0.3); */
+}
+
+/* .serviceblob{
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  z-index: 1;
+  width: 100%;
+} */
+
+.dots1{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-30%);
+}
+
+.dots2{
+  position: absolute;
+  top: 42%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.swiper {
+    width: 330px;
+    height: 380px;
+    margin: 1rem auto 2rem;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 10px 10px 55px 20px rgba(239, 239, 239, 0.81);
+  }
+
+  .swiper-slide h2{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    font-size: 2.5rem;
+    color: rgba(255,255,255,0.4);
+    font-family: var(--poppins-font);
+  }
+  
+  .swiper-slide{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+   
+  .swiper-slide:nth-child(1) {
+    background: linear-gradient(rgba(255, 20, 20, 0.9), rgba(242, 105, 46, 0.95)), url(../../assets/vector/home-webdev.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .swiper-slide:nth-child(2) {
+    background: linear-gradient(rgba(245, 156, 2, 0.942),rgba(227, 243, 9, 0.896)), url(../../assets/vector/home-appdev.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .swiper-slide:nth-child(3) {
+    background: linear-gradient(rgba(0, 80, 7, 0.9), rgba(2, 199, 146, 0.95)), url(../../assets/vector/home-marketing.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .swiper-slide:nth-child(4) {
+    background: linear-gradient(rgba(29, 12, 255, 0.9), rgba(72, 195, 252, 0.95)), url(../../assets/vector/home-blockchain.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .swiper-slide:nth-child(5) {
+    background: linear-gradient(rgba(252, 6, 174, 0.934), rgba(252, 94, 139, 0.867)), url(../../assets/vector/home-designer.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-slide h1{
+    text-align: center;
+    color: #fff;
+    font-family: var(--poppins-font);
+  }
+
+.view-more{
+  margin: 2rem 0 6px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--poppins-font);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+  
+.view-more:hover{
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+}
+
+@media screen and (max-width: 768px){
+  .service-info{
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .swiper {
+    width: 250px;
+    height: 300px;
+    margin: auto 2rem;
+  }
+  .swiper-slide h1{
+    font-size: 30px;
+  }
+  .swiper-slide h2{
+    font-size: 30px;
+  }
+  .view-more{
+    margin: 2rem auto 0;
+    font-size: 14px;
+  }
+}

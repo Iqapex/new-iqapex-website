@@ -1,0 +1,92 @@
+.about-text{
+    padding: 0 8rem;
+}
+
+.about-text p{
+    text-align: center;
+}
+
+.about-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    margin: auto 4rem;
+    z-index: 999;
+    position: relative;
+}
+
+.about-card::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgba(233, 109, 250, 0.1), rgba(119, 244, 255, 0.1));
+    border-radius: 50%;
+    z-index: -9;
+    transform: translate(-150%, -75%);
+    animation: circle-gradient-1 45s infinite linear;
+} 
+
+.about-card::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(rgba(33, 4, 255, 0.045), rgba(141, 217, 255, 0.114));
+    border-radius: 50%;
+    z-index: -9;
+    transform: translate(200%, 50%);
+    animation: circle-gradient-2 60s infinite linear;
+}
+
+@keyframes circle-gradient-1 {
+    33%{
+        transform: translate(150%, -50%);
+    }
+    70%{
+        transform: translate(-170%, 50%);
+    }
+    100%{
+        transform: translate(-150%, -75%);
+    }
+}
+
+@keyframes circle-gradient-2 {
+    33%{
+        transform: translate(-200%, -50%);
+    }
+    70%{
+        transform: translate(125%, -75%);
+    }
+    100%{
+        transform: translate(200%, 50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-card{
+        gap: 2rem;
+    }
+    .about-text{
+        padding: 0 6rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .about-card{
+        padding: 2rem 0;
+        margin: 2rem;
+    }
+    .about-text{
+        padding: 0 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-card{
+        padding: 0;
+        margin: 12px;
+    }
+}

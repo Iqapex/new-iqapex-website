@@ -1,0 +1,16 @@
+.container{
+    padding-top: 1.2rem; 
+}
+
+.offers-box{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .offers-box{
+        flex-direction: column;
+    }
+}

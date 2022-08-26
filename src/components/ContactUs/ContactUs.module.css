@@ -1,0 +1,172 @@
+.contact-details{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 8rem 4rem;
+    z-index: 9;
+}
+
+.contact-heading{
+    margin: 4rem auto 2rem;
+    text-align: center;
+    font-family: var(--opensans-font);
+    line-height: 42px;
+}
+
+.form{
+    padding: 1rem;
+    border-radius: 10px;
+    width: 50%;
+    border: 2px solid #000;
+}
+
+.form:focus-within{
+    /* background: linear-gradient(2700deg, rgb(79, 79, 79), rgb(12, 26, 49)); */
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(254, 254, 254, 0.5));
+    /* -webkit-backdrop-filter: blur(2rem); */
+}
+
+.form p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+/* .contact-details:focus-within p,
+.contact-details:focus-within input ~ label,
+.contact-details:focus-within textarea ~ label,
+.contact-details:focus-within textarea,
+.contact-details:focus-within input{
+    color: #000;
+    border-bottom-color: #000;
+} */
+
+.form-input{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.form-input label{
+    position: absolute;
+    font-size: 14px;
+    top: 40%;
+    color: #000;
+    pointer-events: none;
+    font-family: var(--opensans-font);
+    font-weight: 800;
+    transition: .5s;
+}
+
+.form-input input{
+    height: 40px;
+}
+
+.form-input input, textarea{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    font-family: var(--poppins-font);
+    font-size: 18px;
+}
+
+.form-input textarea{
+    resize: none;
+}
+
+.form-input textarea::-webkit-scrollbar{
+    display: none;
+}
+
+.form-input input:focus ~ label,
+.form-input textarea:focus ~ label,
+.form-input input:valid ~ label,
+.form-input textarea:valid ~ label{
+    top: -3%;
+}
+
+.form-input input:focus ~ input{
+    height: 40px;
+}
+
+.form div.button{
+    text-align: center;
+}
+
+.btn{
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    filter: none;
+}
+
+.contact-img{
+    /* width: 500px; */
+    flex: 0.9;
+    height: 400px;
+    z-index: 999999;
+}
+
+.contact-img img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .map iframe{
+    width: 400px;
+    height: 350px;
+    border: none;
+} */
+
+@media screen and (max-width: 900px) {
+    .contact-details{
+        padding: 2rem 4rem 4rem;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .map iframe{
+        width: 500px;
+        height: 500px;
+    }
+    .form{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-details{
+        padding: 2rem 2rem 4rem;
+    }
+    .map iframe{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .contact-details{
+        margin: 0;
+        padding: 1rem;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
