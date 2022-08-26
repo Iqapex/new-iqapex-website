@@ -16,6 +16,7 @@ const ImpactCard = ({progressEndValue, heading, details}) => {
 
     return () => {       
         clearInterval(progress)    
+    // eslint-disable-next-line
     }}, [progressStartValue])
 
   return (

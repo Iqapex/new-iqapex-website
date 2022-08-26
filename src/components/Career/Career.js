@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PageHeader from '../PageHeader/PageHeader'
 import classes from './Career.module.css'
 import HiringPost from './HiringPost'
