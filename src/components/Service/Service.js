@@ -2,7 +2,6 @@ import React, {useContext} from 'react'
 import classes from './Service.module.css'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Dots } from '../../assets/vector/dots.svg'
-import { ReactComponent as ServiceSvg } from '../../assets/vector/service.svg'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";

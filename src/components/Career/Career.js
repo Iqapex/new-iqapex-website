@@ -6,7 +6,7 @@ import careers from '../../assets/vector/careers.jpg'
 import RnDForm from './RnDForm'
 
 const Career = () => {
-  const [showPost, setShowPost] = useState(false)
+  let showPost = false
 
   return (
     <>

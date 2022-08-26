@@ -9,7 +9,7 @@ const TalentPartnerCard = ({title, content, cardImage}) => {
           <p>{content}</p>
       </div>
       <div className={classes['card-image']}>
-          <img src={cardImage} alt="image-card" />
+          <img src={cardImage} alt="palent-partner-card" />
       </div>
     </div>
   )

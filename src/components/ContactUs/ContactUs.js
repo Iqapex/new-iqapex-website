@@ -10,19 +10,19 @@ const ContactUs = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     // const [error, setError] = useState('')
-    const [isValid, setIsValid] = useState(false)
+    // const [isValid, setIsValid] = useState(false)
     const {mouseEnterHandler, mouseLeaveHandler} = useContext(mouseContext)
 
     const submitHandler = (e) => {
         e.preventDefault()
 
         if(name.trim().length !== 0 && email.includes('@') && email.trim().length !== 0 && message.trim().length !== 0){
-            setIsValid(true)
+            // setIsValid(true)
             setName('')
             setEmail('')
             setMessage('')
         }else{
-            setIsValid(false)
+            // setIsValid(false)
         }
     }
 

@@ -17,7 +17,7 @@ const Header = () => {
           animate={{opacity: 1, scale: [0, 1.1, 1]}}
           transition={{duration: 1.2}}>
           <h1 className={classes.heading}data-text='Your Passion, Our Creation' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Your Passion, Our Creation</h1>
-          <p className={classes.subheading}>India's Unique Product Research & Service Based Startup</p>
+          <p className={classes.subheading}>India's Unique Product Research & Service Based Company</p>
 
           <NavLink to='/contact-us' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Contact Us</NavLink>
         </motion.div>

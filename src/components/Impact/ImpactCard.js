@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useContext} from 'react'
-import { useInView } from 'react-intersection-observer';
 import { mouseContext } from '../../context/mouseContext'
 import classes from './ImpactCard.module.css'
 
