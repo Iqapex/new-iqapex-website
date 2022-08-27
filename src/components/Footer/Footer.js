@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className={classes['info-card']}>
                     <span className={classes['circle-icon']}><FaMapMarkerAlt className={classes.icon} /></span>
                     <p>
-                      <span>Address 1 - </span>1-A, Mohan Kunja Apartment, Ground Floor, North, Biman Nagar, Kaikhali, Kolkata, West Bengal 700052 
+                      <span>Address 1 - </span>1-A, Mohan Kunja Apartment, Ground Floor, Biman Nagar, Kaikhali, Kolkata, West Bengal 700052 
                       <br /><br />
                       <span>Address 2 - </span>Ashutosh Nagar, Vivekananda Road, North 24 Parganas, Barrackpore, West Bengal 743133
                     </p>

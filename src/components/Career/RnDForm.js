@@ -15,8 +15,6 @@ const RnDForm = () => {
 
     const submitHandler = (e) => {
       e.preventDefault()
-      console.log(name, email, phone, experienceLevel, message)
-      console.log("err - ", error, valid)
 
       if(name.trim().length === 0 || message.trim().length === 0){
         setError('Please enter valid input')
@@ -33,11 +31,13 @@ const RnDForm = () => {
       setPhone('')
     }
 
+    let content = 'Form has been submitted successfully'
+
   return (
     <div className={classes['rnd-form']}>
         <h1>You can still be a part of our Research & Development team</h1>
 
-        <form className={classes.form} onSubmit={submitHandler} method="POST" netlify name="rnd-form">
+        <form className={classes.form} onSubmit={submitHandler} method="POST" data-netlify="true" name="rnd-form">
           <input type="hidden" name="form-name" value="rnd-form" />
 
           <div className={classes['input-fields']}>
@@ -64,7 +64,7 @@ const RnDForm = () => {
             <input type="submit" value="Apply Now" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} />
           </div>
           {error && <p style={{color: 'red', textAlign: 'center'}}>{error}</p>}
-          {/* {valid && <p style={{color: 'lightgreen', textAlign: 'center'}}>{content}</p>} */}
+          {valid && <p style={{color: '#008a00', fontWeight:'600', textAlign: 'center'}}>{content}</p>}
         </form>
     </div>
   )

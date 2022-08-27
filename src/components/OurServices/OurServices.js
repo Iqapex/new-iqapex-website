@@ -32,8 +32,7 @@ const OurServices = () => {
 
           <OurServiceCard title='Blockchain Development' subheading='With the aid of a top blockchain development company like us, work in decentralized technologies and explore the importance of blockchain, the technology with which the future will be built. Without a doubt, the global adoption of blockchain technology has raised the level of competition in the world. Our blockchain engineers are capable of creating blockchain applications of a high caliber for businesses. In addition, we offer blockchain consulting, make developer tools, and instruct the general public on the same.' image={blockchain} tools={blockArr} />
 
-          <OurServiceCard title='Creative Design' subheading='The designs are where the attractive part of the business profile lies. Thus, the better the design outlay of the company is, the better its prospects are. With the strong expertise and experiences in providing better designs, Centre locus drives can make you the business Centrepoint. 
-          The tools that we choose are undoubtedly the best ones and are diversified enough to fulfill all forms of business needs.' image={design} tools={designArr} />
+          <OurServiceCard title='Creative Design' subheading='The designs are where the attractive part of the business profile lies. Thus, the better the design outlay of the company is, the better its prospects are. With the strong expertise and experiences in providing better designs, IQApex Labs can make you the business Centrepoint. The tools that we choose are undoubtedly the best ones and are diversified enough to fulfill all forms of business needs.' image={design} tools={designArr} />
         </div>
            
     </>
