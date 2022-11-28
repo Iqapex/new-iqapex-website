@@ -22,7 +22,7 @@ const ContactUs = () => {
                 name, email, message
             })
             console.log(res.data)
-            if(res.data?.name || res.data?.email || res.data?.message){
+            if(res.data?.message?.name && res.data?.message?.email && res.data?.message?.message){
                 setName('')
                 setEmail('')
                 setMessage('')
