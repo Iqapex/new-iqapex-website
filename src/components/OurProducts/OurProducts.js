@@ -10,9 +10,7 @@ import bgimg from '../../assets/vector/iqverse-bg.png'
 
 const OurProducts = () => {
   const listArr = ["Creation & hosting, domains, any type of website, servers, email & office services, web security, and online marketing tools.", "Inexpensive shared web hosting (Debian Linux) and domains, cloud storage, VPS, and dedicated services.", "An uptime guarantee of 99.9% per calendar month. Credit of one free day’s hosting for every hour of downtime.", "Manually backup for your account data (including mailboxes) and websites from your control panel."]
-
-  //https://www.freepik.com/free-vector/modern-greenhouse-isometric-icon-set-smart-sprinklers-seedlings-robot-working-with-plants-greenhouse-with-climate-control-illustration_21078052.htm#query=aquaponics&position=20&from_view=search
-
+  
   return (
     <div className={classes['products-page']}>
       <PageHeader heading='Welcome To IQVerse' bgimg={bgimg} />

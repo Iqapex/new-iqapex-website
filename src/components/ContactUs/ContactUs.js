@@ -4,6 +4,7 @@ import classes from './ContactUs.module.css'
 import PageHeader from '../PageHeader/PageHeader'
 import { mouseContext } from '../../context/mouseContext'
 import contact from '../../assets/vector/contact-us.png'
+import axios from 'axios'
 
 const ContactUs = () => {
     const [name, setName] = useState('')
@@ -13,17 +14,31 @@ const ContactUs = () => {
     // const [isValid, setIsValid] = useState(false)
     const {mouseEnterHandler, mouseLeaveHandler} = useContext(mouseContext)
 
-    const submitHandler = (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault()
 
-        if(name.trim().length !== 0 && email.includes('@') && email.trim().length !== 0 && message.trim().length !== 0){
-            // setIsValid(true)
-            setName('')
-            setEmail('')
-            setMessage('')
-        }else{
-            // setIsValid(false)
+        try {     
+            const res = await axios.post('http://localhost:8080/api/client/contact', {
+                name, email, message
+            })
+            console.log(res.data)
+            if(res.data?.name || res.data?.email || res.data?.message){
+                setName('')
+                setEmail('')
+                setMessage('')
+            }
+        } catch (error) {
+            console.log(error.message)
         }
+
+        // if(name.trim().length !== 0 && email.includes('@') && email.trim().length !== 0 && message.trim().length !== 0){
+        //     // setIsValid(true)
+        //     setName('')
+        //     setEmail('')
+        //     setMessage('')
+        // }else{
+        //     // setIsValid(false)
+        // }
     }
 
   return (

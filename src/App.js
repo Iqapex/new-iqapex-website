@@ -10,6 +10,7 @@ import ExpertiseSolutions from './pages/ExpertiseSolutions';
 import Blogs from './pages/Blogs';
 import Loading from './components/Loading';
 import GoToTop from './components/GoToTop';
+import Apply from './pages/Apply';
 
 const Careers = lazy(() => import('./pages/Careers'))
 const Contact = lazy(() => import('./pages/Contact'))
@@ -44,6 +45,7 @@ function App() {
             <Route path='/talent-partnership' element={<TalentPartnership />} />
             <Route path='/product-engineering' element={<ProductEngineering />} />
             <Route path='/expertise-solutions' element={<ExpertiseSolutions />} />
+            <Route path='/apply/:id' element={<Apply />} />
 
             <Route path='*' element={<NotFound />} />
           </Routes>

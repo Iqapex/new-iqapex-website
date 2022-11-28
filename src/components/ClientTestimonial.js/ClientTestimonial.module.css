@@ -17,6 +17,7 @@
   gap: 8px;
   border-radius: 10px;
   border: 3px solid #fff;
+  z-index: 999;
   /* box-shadow: 0 2px 20px rgba(0,0,0,0.8); */
 }
 
@@ -31,7 +32,7 @@
   background-color: rgb(66, 160, 255);
   opacity: 0.2;
   box-shadow: 0px 0px 106px 224px rgb(66, 160, 255);
-  z-index: 0;
+  z-index: -99;
   animation: gradient 50s linear infinite;
 }
 
@@ -46,7 +47,7 @@
   background-color: rgb(105, 243, 195);
   opacity: 0.25;
   box-shadow: 0px 0px 106px 224px rgb(105 243 195);
-  z-index: 0;
+  z-index: -99;
   animation: gradient 10s linear infinite;
 }
 
