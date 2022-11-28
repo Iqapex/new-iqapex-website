@@ -18,7 +18,7 @@ const ContactUs = () => {
         e.preventDefault()
 
         try {     
-            const res = await axios.post('http://localhost:8080/api/client/contact', {
+            const res = await axios.post('https://iqapexlabs.onrender.com/api/client/contact', {
                 name, email, message
             })
             console.log(res.data)
