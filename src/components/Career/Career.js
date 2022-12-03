@@ -15,10 +15,11 @@ const Career = () => {
       <div className={classes.careers}>
           {!showPost && <h1 className={classes['post-title']}>Hiring will be started soon. Please stay connected.</h1>}
 
-          {showPost && <><h1 className={classes['post-title']}>We Are Now <span>Hiring</span></h1>
-          <HiringPost title="MERN Stack Developer" desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusantium libero consequatur sunt labore in id voluptate eaque corporis delectus voluptates minus porro deleniti, iste praesentium provident, sint est necessitatibus!' />
+          {showPost && <><h1 className={classes['post-title']}>We Are <span>Hiring</span> Now</h1>
+          <HiringPost title="MERN Stack Developer" desc='MERN Full stack developer is responsible for writing reusable and efficient code, Design and implementation of low-latency, high-availability, and performant applications.'  />
 
-          <HiringPost title="Graphics Designer" desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusantium libero consequatur sunt labore in id voluptate eaque corporis delectus voluptates minus porro deleniti, iste praesentium provident, sint est necessitatibus!' /></>}
+          </>
+          }
 
           <RnDForm />
 

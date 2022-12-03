@@ -11,7 +11,7 @@ const HiringPost = ({title, desc}) => {
             <h2>{title}</h2>
             <p><span>Job Description: </span>{desc}</p>
         </div>
-        <NavLink to='/apply/:id' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Apply Now</NavLink>
+        <NavLink to={`/apply/${title}`} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Apply Now</NavLink>
     </div>
   )
 }

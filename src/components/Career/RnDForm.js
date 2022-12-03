@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import classes from './RnDForm.module.css'
 import { mouseContext } from '../../context/mouseContext'
+import axios from 'axios'
 
 const RnDForm = () => {
   const {mouseEnterHandler, mouseLeaveHandler} = useContext(mouseContext)
@@ -10,28 +11,46 @@ const RnDForm = () => {
     const [phone, setPhone] = useState('')
     const [experienceLevel, setExperienceLevel] = useState('')
     const [message, setMessage] = useState('')
-    const [error, setError] = useState(null)
-    const [valid, setValid] = useState(false)
 
-    const submitHandler = (e) => {
+    const [messageDisplay, setMessageDisplay] = useState('')
+    const [valid, setValid] = useState()
+
+    const submitHandler = async (e) => {
       e.preventDefault()
 
-      if(name.trim().length === 0 || message.trim().length === 0){
-        setError('Please enter valid input')
-        setValid(false)
-        return
+      // if(name.trim().length === 0 || message.trim().length === 0){
+      //   setError('Please enter valid input')
+      //   setValid(false)
+      //   return
+      // }
+
+      try {
+        const res = await axios.post('https://iqapexlabs.onrender.com/api/research', {
+            name, email, message, phone, experienceLevel
+        })
+        // console.log(res?.data)
+
+        if(res?.data?.status){
+          setValid(res?.data?.status)
+          setMessageDisplay(res?.data?.message)
+        }
+        
+        if(res?.data?.status === 'success'){
+          setEmail('')
+          setName('')
+          setMessage('')
+          setExperienceLevel('')
+          setPhone('')
+        }
+      } catch (error) {
+        // console.log(error.message)
+        setMessageDisplay("Something went wrong")
       }
-
-      setValid(true)
-      setError(null)
-      setEmail('')
-      setName('')
-      setMessage('')
-      setExperienceLevel('')
-      setPhone('')
+      
+      setTimeout(() => {
+          setMessageDisplay('')
+      }, 3000);
     }
-
-    let content = 'Form has been submitted successfully'
 
   return (
     <div className={classes['rnd-form']}>
@@ -48,11 +67,11 @@ const RnDForm = () => {
               <input type="email" value={email} name="email" placeholder='Enter Email Address' onChange={(e) => setEmail(e.target.value)} required />
             </div>
             <div className={classes.field}>
-              <input type="number" value={phone} name="phone" placeholder='Enter Mobile Number' onChange={(e) => setPhone(e.target.value)} required />
+              <input type="text" value={phone} name="phone" placeholder='Enter Mobile Number' onChange={(e) => setPhone(e.target.value)} required />
             </div>
             <div>
               <select value={experienceLevel} placeholder='Experience Level' name="experienceLevel" onChange={(e) => setExperienceLevel(e.target.value)} className={classes.field}>
-                <option value="">-- Experience Level --</option>
+                <option value="" disabled selected>-- Experience Level --</option>
                 <option value="Internship">Internship</option>
                 <option value="Full Time">Full Time</option>
                 <option value="Part Time">Part Time</option>
@@ -63,8 +82,8 @@ const RnDForm = () => {
             </div>
             <input type="submit" value="Apply Now" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} />
           </div>
-          {error && <p style={{color: 'red', textAlign: 'center'}}>{error}</p>}
-          {valid && <p style={{color: '#008a00', fontWeight:'600', textAlign: 'center'}}>{content}</p>}
+          {valid === 'error'  && <p style={{color: 'red', textAlign: 'center'}}>{messageDisplay}</p>}
+          {valid === 'success' && <p style={{color: '#008a00', fontWeight:'600', textAlign: 'center'}}>{messageDisplay}</p>}
         </form>
     </div>
   )

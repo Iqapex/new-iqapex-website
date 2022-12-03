@@ -62,7 +62,7 @@ const ClientTestimonial = () => {
 
               {createSlide("Aman Gupta", "Product Manager at Moglix", "Great Going Team IQApex. Your Team’s dedication & Hard Work in the R & D Department, especially hardware attracts me the most. Wishing you all the best with the GreenLife IQponic venture !!!", "../../assets/avatar/client-1.png")}
 
-              {createSlide("Brojen Kumar Singh", "Self-Employed", "The web based app developed by Team IQApex has taken my business to new heights.I have received so many positive reviews from my customers.Thank You for such great efforts.", "../../assets/avatar/client-1.png")}
+              {createSlide("Brojen Kumar Singh", "Import/Export", "The web based app developed by Team IQApex has taken my business to new heights.I have received so many positive reviews from my customers.Thank You for such great efforts.", "../../assets/avatar/client-1.png")}
 
               {createSlide("Arun Kumar Singh", "National Yoga Trainer", "The work couldn’t have been done in a better way.The team has handled the project very professionally and understood all my requirements.Wish you all the best for future ventures.", "../../assets/avatar/client-1.png")}
 

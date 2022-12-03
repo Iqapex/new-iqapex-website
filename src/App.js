@@ -45,7 +45,7 @@ function App() {
             <Route path='/talent-partnership' element={<TalentPartnership />} />
             <Route path='/product-engineering' element={<ProductEngineering />} />
             <Route path='/expertise-solutions' element={<ExpertiseSolutions />} />
-            <Route path='/apply/:id' element={<Apply />} />
+            <Route path='/apply/:domain' element={<Apply />} />
 
             <Route path='*' element={<NotFound />} />
           </Routes>

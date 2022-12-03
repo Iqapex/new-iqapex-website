@@ -13,7 +13,7 @@ const About = () => {
       </div>
 
       <div className={classes['about-text']}>
-        <p>IQAPEX Labs is mainly an IT service and software development firm. We are focused on web & mobile app development, blockchain development, digital marketing etc. We have already worked on a variety range of services almost in every domain. Apart from these services, we are also known for our research based product develoment expertise.</p>
+        <p>IQApex Labs is mainly an IT service and software development firm. We are focused on web & mobile app development, blockchain development, digital marketing etc. We have already worked on a variety range of services almost in every domain. Apart from these services, we are also known for our research based product develoment expertise.</p>
       </div>
 
       <div className={classes['about-card']}>

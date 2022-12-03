@@ -10,7 +10,7 @@ const ContactUs = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-    // const [error, setError] = useState('')
+    const [displayMessage, setDisplayMessage] = useState('')
     // const [isValid, setIsValid] = useState(false)
     const {mouseEnterHandler, mouseLeaveHandler} = useContext(mouseContext)
 
@@ -21,14 +21,15 @@ const ContactUs = () => {
             const res = await axios.post('https://iqapexlabs.onrender.com/api/client/contact', {
                 name, email, message
             })
-            console.log(res.data)
-            if(res.data?.message?.name && res.data?.message?.email && res.data?.message?.message){
+            // console.log(res.data)
+            if(res.data?.status === 'success'){
                 setName('')
                 setEmail('')
                 setMessage('')
             }
         } catch (error) {
-            console.log(error.message)
+            // console.log(error.message)
+            setDisplayMessage(error.message)
         }
 
         // if(name.trim().length !== 0 && email.includes('@') && email.trim().length !== 0 && message.trim().length !== 0){
@@ -66,6 +67,7 @@ const ContactUs = () => {
                 <div className='button' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
                     <button className={classes.btn}>Submit</button>
                 </div>
+                {displayMessage !== '' && <h4 style={{color: 'red'}}>{displayMessage}</h4>}
             </form>
 
             <div className={classes['contact-img']}>
