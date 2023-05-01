@@ -74,7 +74,6 @@ const Header = () => {
            
       <motion.div className={classes['header-info']} initial={{opacity: 0}} animate={{opacity: 1, scale: [0, 1.1, 1]}} transition={{duration: 1.2}}>
           <h1 className={classes.heading}data-text='Community' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Community</h1>
-          <p className={classes.subheading}>The following paragraph is an example of a simple paragraph that follows the basic paragraph form. 1 There are many different kinds of animals that live in China. 2 Tigers and leopards are animals that live in China's forests in the north</p>
         </motion.div>
 
            </div>
@@ -87,7 +86,6 @@ const Header = () => {
            
       <motion.div className={classes['header-info']} initial={{opacity: 0}} animate={{opacity: 1, scale: [0, 1.1, 1]}} transition={{duration: 1.2}}>
           <h1 className={classes.heading}data-text='Focused' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Focused</h1>
-          <p className={classes.subheading}>The following paragraph is an example of a simple paragraph that follows the basic paragraph form. 1 There are many different kinds of animals that live in China. 2 Tigers and leopards are animals that live in China's forests in the north</p>
         </motion.div>
 
            </div>
@@ -102,7 +100,6 @@ const Header = () => {
            
       <motion.div className={classes['header-info']} initial={{opacity: 0}} animate={{opacity: 1, scale: [0, 1.1, 1]}} transition={{duration: 1.2}}>
           <h1 className={classes.heading}data-text='Invention' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Invention</h1>
-          <p className={classes.subheading}>The following paragraph is an example of a simple paragraph that follows the basic paragraph form. 1 There are many different kinds of animals that live in China. 2 Tigers and leopards are animals that live in China's forests in the north</p>
         </motion.div>
 
            </div>
@@ -115,7 +112,6 @@ const Header = () => {
            
       <motion.div className={classes['header-info']} initial={{opacity: 0}} animate={{opacity: 1, scale: [0, 1.1, 1]}} transition={{duration: 1.2}}>
           <h1 className={classes.heading}data-text='Support' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Support</h1>
-          <p className={classes.subheading}>The following paragraph is an example of a simple paragraph that follows the basic paragraph form. 1 There are many different kinds of animals that live in China. 2 Tigers and leopards are animals that live in China's forests in the north</p>
         </motion.div>
 
            </div>
