@@ -14,6 +14,7 @@ import RnDMember from './RnDMember'
 import member1 from '../../assets/img/soumya.jpeg'
 import member2 from '../../assets/img/kriti.png'
 import member3 from '../../assets/img/samrat.PNG'
+import Product from '../../components/Product/Product'
 
 const RndD = () => {
   return (
@@ -41,6 +42,7 @@ const RndD = () => {
           <h1>One-on-One Classes</h1>
           <RnDOffers />
         </div>
+        <Product /> 
 
         <div className={`${classes.about} ${classes.membersbg}`}>
           <h1>Meet Our R&D Team</h1>

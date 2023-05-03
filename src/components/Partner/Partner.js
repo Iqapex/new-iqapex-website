@@ -9,6 +9,10 @@ import biswa_bangla from '../../assets/partners/Biswa_Bangla.jpg'
 import img6 from '../../assets/partners/partner-6.png'
 import img7 from '../../assets/partners/startup-india.png'
 import img8 from '../../assets/partners/msme.png'
+import nasscom from '../../assets/img/nasscom.jpg'
+import bita from '../../assets/img/bita.png'
+import bcc from '../../assets/img/bcc.jpg'
+import green from '../../assets/img/green.jpg'
 import { mouseContext } from '../../context/mouseContext'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper";
@@ -68,6 +72,10 @@ const Partner = () => {
           {createSlide(img2)}
           {createSlide(img5)}
           {createSlide(img6)}
+          {createSlide(green)}
+          {createSlide(nasscom)}
+          {createSlide(bita)}
+          {createSlide(bcc)}
       </Swiper>
     </div>
   </>

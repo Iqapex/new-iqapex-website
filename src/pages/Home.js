@@ -7,7 +7,6 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Impact from '../components/Impact/Impact'
 import Partner from '../components/Partner/Partner'
-import Product from '../components/Product/Product'
 import Services from '../components/Service/Service'
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
       <Header />
       <About />
       <Services />
-      <Product />
+      {/* <Product /> */}
       <Impact />
       {/* <Testimonial /> */}
       <ClientTestimonial />

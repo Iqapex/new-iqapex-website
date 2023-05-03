@@ -45,12 +45,16 @@ const Header = () => {
     
         cssMode={true}
         navigation={true}
-        pagination={true}
+        pagination={{
+          type: "progressbar",
+        }}
+        slidesPerView={"auto"}
+        spaceBetween={90}        
         mousewheel={true}
         keyboard={true}
         modules={[Autoplay,Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
-        style={{ width:"85rem",height:"39rem",'&hover':{
+        style={{ width:"95%",height:"36rem",marginTop:"3rem",'&hover':{
           opacity:"0.5"
         }}}
       >

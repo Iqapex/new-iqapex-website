@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/img/logo-footer.png'
+// import logo from '../../assets/img/logo-footer.png'
+import logo from '../../assets/img/iqapex-logo-3.png'
 import classes from './Footer.module.css'
 import {FaMapMarkerAlt, FaFacebook, FaInstagram, FaLinkedinIn} from 'react-icons/fa'
 import {GrMail} from 'react-icons/gr'
