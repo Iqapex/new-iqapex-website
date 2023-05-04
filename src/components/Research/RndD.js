@@ -10,11 +10,11 @@ import Testimonial from '../Testimonial/Testimonial'
 import RnDOffers from './RnDOffers'
 import RnDAbout from './RnDAbout'
 import RnDCommunity from './RnDCommunity'
-import RnDMember from './RnDMember'
+// import RnDMember from './RnDMember'
 import member1 from '../../assets/img/soumya.jpeg'
-import member2 from '../../assets/img/kriti.png'
-import member3 from '../../assets/img/samrat.PNG'
-import Product from '../../components/Product/Product'
+// import member2 from '../../assets/img/kriti.png'
+// import member3 from '../../assets/img/samrat.PNG'
+import ProductItem from '../../components/OurProducts/ProductItem'
 
 const RndD = () => {
   return (
@@ -42,9 +42,8 @@ const RndD = () => {
           <h1>One-on-One Classes</h1>
           <RnDOffers />
         </div>
-        <Product /> 
 
-        <div className={`${classes.about} ${classes.membersbg}`}>
+        {/* <div className={`${classes.about} ${classes.membersbg}`}>
           <h1>Meet Our R&D Team</h1>
 
           <div className={classes.members}>
@@ -53,7 +52,32 @@ const RndD = () => {
             <RnDMember avatar={member2} altImg='kriti' name='Kriti Sharma' role='Researcher at R&D' />
             <RnDMember avatar={member3} altImg='samratroy' name='Samrat Roy' role='Researcher at R&D' />
           </div>
+        </div> */}
+        {/* <ProductItem name="K To K Consultants" style={{width:"50%"}}
+        description="K TO K Consultancy Services is a pro law firm that serves as a single destination for all legal issues for beginners,
+         founders, incubators, angelic investors, venture capitalists, and equity funds representing a variety of sectors / industries 
+         including health-tech, ed-tech , fin-tech, FMCG, logistics, e-commerce, travel, mobility, pharma and health care, and real 
+         estate etc. with offices in Kolkata, India." imgUrl={member1} link='https://k2kconsultants.com/' />
+
+         <div className='grid-container' style={{width:"80%" , height:"30rem", border:"2px solid black",display:"grid",
+           gridTemplateColumns: "auto auto",justifyContent:"center",
+           margin:"auto"}}>
+         <div class="grid-item">
+         <div className={classes.image}>
+          <img src={member1} alt="iqverse_image-alt" style={{height:"20rem",border:"rem solid grey"}} />
         </div>
+         </div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">
+         
+          </div>
+          <div class="grid-item">
+          <div className={classes.image}>
+          <img src={member1} alt="iqverse_image-alt" style={{width:"100%",height:"20rem"}} />
+        </div>
+          </div>
+         </div> */}
+
 
         <Testimonial />
 

@@ -55,7 +55,7 @@ const Testimonial = () => {
 
               {createSlide("Jayasmita Roy", "MSc - Entrepreneurship & Innovation - Skema Business School, France", "Mr. Arjun is someone that you will enjoy working with because of his pretty wide skill set to tackle all problems.He has a creative mind and always has a solution out of the box.With a dedicated team of individuals he is doing great in technological space specially in hardware.", "female")}
 
-              {createSlide("Hritika Dey", "Institute of Engineering and Management - Kolkata", "The innovative project “IoT based Anti Theft Burglar System”,  our team has made in the 2nd year of B.Tech  under the guidance of Mr.Arjun was worth commendable.", "female")}
+              {/* {createSlide("Hritika Dey", "Institute of Engineering and Management - Kolkata", "The innovative project “IoT based Anti Theft Burglar System”,  our team has made in the 2nd year of B.Tech  under the guidance of Mr.Arjun was worth commendable.", "female")} */}
 
               {createSlide("Hrithik Ghatny", "Oracle, System Engineer", "Thank you team IQApex for the wonderful experience and opportunity that you had given me during the completion of my Engg. degree. I’ve learnt a lot & also grown my confidence in my professional life as well. Training as a newbie was a lot of work for you.Thank you for your time and patience", "male")}
 

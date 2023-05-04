@@ -7,6 +7,7 @@ import iqhost from '../../assets/img/iqhost.png'
 import ProductItem from './ProductItem'
 // import bgimg from '../../assets/img/iqverse-bg.jpg'
 import bgimg from '../../assets/vector/iqverse-bg.png'
+import Product from '../../components/Product/Product'
 
 const OurProducts = () => {
   const listArr = ["Creation & hosting, domains, any type of website, servers, email & office services, web security, and online marketing tools.", "Inexpensive shared web hosting (Debian Linux) and domains, cloud storage, VPS, and dedicated services.", "An uptime guarantee of 99.9% per calendar month. Credit of one free day’s hosting for every hour of downtime.", "Manually backup for your account data (including mailboxes) and websites from your control panel."]
@@ -24,6 +25,8 @@ const OurProducts = () => {
         
         <ProductItem name="iQHost" description={"The iQHost Product provides the following key potentials:"} lists={listArr} imgUrl={iqhost} />
       </div>
+      <Product /> 
+
     </div>
   )
 }
