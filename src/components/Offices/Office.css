@@ -1,0 +1,74 @@
+/* Office.css */
+
+/* Base styles */
+.slide-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; /* Add margin between slides */
+    padding: 4rem;
+ 
+    
+  }
+  .slide-content:hover{
+    background: linear-gradient(0deg, rgba(255,255,255,0.5), transparent);
+    cursor: pointer;
+    transform: scale(1.05);
+    .right-content{
+      color:black;
+    }
+
+  }
+  
+  .office-image {
+    width: 50%; /* Set the width of the office image */
+    max-width: 90%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .right-content {
+    width: 45%; /* Set the width of the content */
+
+    color:whitesmoke;
+  }
+  
+  .right-content h2 {
+    font-size: 24px; /* Example font size for heading */
+  }
+  
+  .right-content p {
+    font-size: 16px; /* Example font size for paragraph */
+  }
+ 
+  .contact-info {
+    margin-top: 20px; /* Add margin between content and contact info */
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-item svg {
+    margin-right: 10px; /* Add margin between icon and text */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .slide-content {
+      flex-direction: column; /* Stack content vertically on small screens */
+      align-items: center; /* Center content vertically */
+    }
+  
+    .office-image,
+    .right-content {
+      width: 100%; /* Full width on small screens */
+    }
+  
+    .right-content {
+      margin-top: 20px; /* Add margin between image and content */
+      text-align: center; /* Center text content */
+    }
+  }
+  

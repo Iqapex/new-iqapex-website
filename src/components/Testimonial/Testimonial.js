@@ -1,16 +1,16 @@
-import React, {useContext} from 'react'
-import classes from './Testimonial.module.css'
-import {FaQuoteLeft} from 'react-icons/fa'
-import male from '../../assets/avatar/male.png'
+import React, { useContext } from 'react'
+import { FaQuoteLeft } from 'react-icons/fa'
 import female from '../../assets/avatar/female.png'
+import male from '../../assets/avatar/male.png'
+import classes from './Testimonial.module.css'
 // import { Avatar } from '@mui/material'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/autoplay";
+import { Autoplay, Navigation, Pagination } from "swiper"
+import "swiper/css"
+import "swiper/css/autoplay"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { mouseContext } from '../../context/mouseContext'
 
 const Testimonial = () => {
@@ -33,7 +33,7 @@ const Testimonial = () => {
   }
   
   return (
-    <div className={classes.section}>
+    <div className={classes.section} style={{backgroundColor:"whitesmoke"}}>
         <h1 className={classes.heading}>Know How IQApex Labs is Transforming Lives around the World</h1>
 
         <div className={classes.testimonials}>

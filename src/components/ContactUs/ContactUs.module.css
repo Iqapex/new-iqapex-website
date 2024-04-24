@@ -58,7 +58,7 @@
     position: absolute;
     font-size: 14px;
     top: 40%;
-    color: #000;
+    color:white;
     pointer-events: none;
     font-family: var(--opensans-font);
     font-weight: 800;

@@ -1,16 +1,20 @@
+import { Suspense, lazy, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import classes from './App.module.css';
-import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
-import { lazy, Suspense, useState } from 'react';
-import Cursor from './components/Cursor/Cursor';
+//import Cursor from './components/Cursor/Cursor';
+import EventDetails from './components/Events/EventDetails';
+import GoToTop from './components/GoToTop';
+import Loading from './components/Loading';
+import About from './pages/About';
+import Apply from './pages/Apply';
+import Blogs from './pages/Blogs';
+import Events from './pages/Events';
+import ExpertiseSolutions from './pages/ExpertiseSolutions';
+import Investors from './pages/Investors';
+import ProductEngineering from './pages/ProductEngineering';
 import Research from './pages/Research';
 import TalentPartnership from './pages/TalentPartnership';
-import ProductEngineering from './pages/ProductEngineering';
-import ExpertiseSolutions from './pages/ExpertiseSolutions';
-import Blogs from './pages/Blogs';
-import Loading from './components/Loading';
-import GoToTop from './components/GoToTop';
-import Apply from './pages/Apply';
 
 const Careers = lazy(() => import('./pages/Careers'))
 const Contact = lazy(() => import('./pages/Contact'))
@@ -31,11 +35,12 @@ function App() {
 
   return (
     !loading && (<div className={classes.app}>
-        <Cursor />  
+       {/* <Cursor /> */ }
         <Suspense fallback={<div style={{display: 'grid', placeitems: 'center', minHeight: '100vh'}}><Loading /></div>}>
           <GoToTop />
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/aboutUs' element={<About />} />
             <Route path='/services' element={<Services />} />
             <Route path='/iqverse' element={<Products />} />
             <Route path='/research-and-development' element={<Research />} />
@@ -45,6 +50,9 @@ function App() {
             <Route path='/talent-partnership' element={<TalentPartnership />} />
             <Route path='/product-engineering' element={<ProductEngineering />} />
             <Route path='/expertise-solutions' element={<ExpertiseSolutions />} />
+            <Route path='/investor' element={<Investors />} />
+            <Route path='/event' element={<Events />} />
+            <Route path='/events/:id' element={<EventDetails/>}/>
             <Route path='/apply/:domain' element={<Apply />} />
 
             <Route path='*' element={<NotFound />} />

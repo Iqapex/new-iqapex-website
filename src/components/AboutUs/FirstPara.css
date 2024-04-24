@@ -1,0 +1,115 @@
+/* Achievements.css */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .section-subheading {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.8s ease-in, transform 0.8s ease;
+  }
+  
+  
+  .about-content.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .about-image {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width of the image */
+    margin-bottom: 2rem;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Add transition effects */
+  }
+  
+  .about-image img:hover {
+    cursor: pointer;
+    filter: brightness(80%); /* Adjust brightness on hover */
+    transform: scale(1.1);
+  }
+  
+  .about-text1 {
+    margin-top: 0px;
+    max-width: 600px; /* Adjust the maximum width of the text */
+    text-align: justify; /* Optional: Justify text for better readability */
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 1rem; /* Add padding around text */
+    margin-bottom: 30px;
+    background-color:transparent; /* Add background color */
+    border-radius: 8px; /* Add border radius */
+  }
+  
+  .about-text1 p {
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: white;
+  }
+  
+  .about-text1 button {
+    border: none;
+    border-radius: 20px;
+    background-color: #fff; /* Change button background color */
+    color: #007bff; /* Change button text color */
+    padding: 0.75rem 1.5rem; /* Adjust button padding */
+    font-size: 1rem; /* Adjust button font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    width: 200px;
+  }
+  
+  .about-text1 button:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+  }
+  
+  @media screen and (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .about-text1 {
+      margin-left: 2rem; /* Adjust spacing between image and text */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-text1 {
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+  }
+  

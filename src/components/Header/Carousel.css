@@ -1,0 +1,97 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 15, 0.658) 75%, rgba(0, 0, 15, 0.9));
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navbar styles */
+
+
+/* Swiper container styles */
+.swiper_container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide:hover{
+  cursor: pointer;
+  .carousel-text{
+    transform: scale(1.2) translate(-50%, -50%);
+    
+   
+  }
+  .image{
+    filter: brightness(15%);
+   
+  }
+}
+
+/* Slide text styles */
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ transform:  translate(-50%, -50%);
+
+  color:white;
+  z-index: 10;
+  text-align: center;
+}
+
+.carousel-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.carousel-text p {
+  font-size: 1.2rem;
+}
+
+/* Pagination styles */
+
+
+
+
+/* Navigation button styles */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+
+  color:white;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}

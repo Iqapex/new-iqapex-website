@@ -21,6 +21,8 @@
 }
 
 .nav-link a{
+    display: flex;
+    gap:2rem;
     color: rgb(132, 132, 132);
     font-size: 14px;
     font-family: var(--opensans-font);
@@ -31,6 +33,7 @@
 .nav-link a:hover,
 .nav-link a:active{
     color: var(--tertiary-color);
+    transform: scale(1.1);
 }
 
 .newClass .navlink-container ul li .active,

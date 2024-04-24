@@ -1,0 +1,52 @@
+/* Achievement.css */
+
+/* Achievements container */
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(50px); /* Initially move the achievements down */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Show achievements when the show class is applied */
+  .achievements.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Achievement card */
+  .achievement-card {
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #c72eff, #462eff, #00c6d0) 1;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Achievement card hover effect */
+  .achievement-card:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  
+  /* Achievement title */
+  .achievement-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#2469bc;
+  }
+  
+  /* Achievement number */
+  .achievement-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+  }
+  

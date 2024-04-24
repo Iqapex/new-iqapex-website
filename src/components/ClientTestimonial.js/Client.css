@@ -1,0 +1,89 @@
+.client-testimonials {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonial {
+    background-color: transparent; /* Adjust background color */
+    border-radius: 8px;
+    padding: 8rem; /* Adjust padding */
+    text-align: left;
+    position: relative; /* Add position relative */
+    margin-bottom: 2rem; /* Add margin between testimonials */
+  }
+  
+  .client-image {
+    width: 80px; /* Adjust the size of the client image */
+    height: 80px; /* Adjust the size of the client image */
+    border-radius: 50%; /* Make the image round */
+    position: absolute; /* Position the image absolutely */
+    top: 7px; /* Adjust vertical position */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: white; /* Adjust text color */
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  
+  .testimonial-author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:#2469bc; /* Adjust text color */
+  }
+  
+  .testimonial-company {
+   
+    font-size: 1rem;
+    color: #777; /* Adjust text color */
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .testimonial {
+      padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+    
+    .client-image {
+      width: 60px; /* Adjust size of client image for smaller screens */
+      height: 60px; /* Adjust size of client image for smaller screens */
+      top: -30px; /* Adjust vertical position for smaller screens */
+    }
+    
+    .section-heading {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    
+    .testimonial-text {
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+    
+    .testimonial-author {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+    
+    .testimonial-company {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  .swiper-button-next, .swiper-button-prev{
+    background-color:transparent;
+    color:#2469bc
+  }

@@ -1,13 +1,13 @@
 import React from 'react'
-import classes from './OurServices.module.css'
-import webdev from '../../assets/vector/webdev-new.png'
+import servicebg from '../../assets/img/service-bg.jpg'
 import appdev from '../../assets/vector/appdev-bg.png'
 import blockchain from '../../assets/vector/blockchain.png'
-import marketing from '../../assets/vector/marketing.png'
 import design from '../../assets/vector/design.png'
+import marketing from '../../assets/vector/marketing.png'
+import webdev from '../../assets/vector/webdev-new.png'
 import PageHeader from '../PageHeader/PageHeader'
 import OurServiceCard from './OurServiceCard'
-import servicebg from '../../assets/img/service-bg.jpg'
+import classes from './OurServices.module.css'
 
 const OurServices = () => {
   const webdevArr = ['Progressive Web Apps', 'Full-Stack Web Applications', 'All Cutting-edge Web Technologies', 'Cloud Hosting']
@@ -21,7 +21,7 @@ const OurServices = () => {
       <PageHeader className={classes.bgclass} heading='We Serve With Trust' bgimg={servicebg} />
         <div className={classes['service-intro']}>
           <h2>Are you an Enterprise/Startup? Looking for an organization that can help you to innovate with technology to grow your business exponentially?</h2>
-          <p>Well, it's all about the law of attraction. You have just found the organization, you are looking for. Whether you need a software, hardware or both integrated, IQApex Labs just got you covered.</p>
+          <p style={{color:'white'}}>Well, it's all about the law of attraction. You have just found the organization, you are looking for. Whether you need a software, hardware or both integrated, IQApex Labs just got you covered.</p>
         </div>
         <div className={classes.services}>
           <OurServiceCard title='Web Development' subheading="The #1 Web Development company trusted by 50+ Brands. We help in bringing your vision to life by creating powerful, engaging and stunning websites and web applications for you. Collaborate with us to significantly boost your online presence with Websites that inspire. With the help of our talented Web Dev team Build and Organize platform friendly and highly responsive websites that help you achieve all your goals and aim higher. The sky's the limit!" image={webdev} tools={webdevArr} />

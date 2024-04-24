@@ -1,10 +1,10 @@
-import React, { useState, useContext } from 'react'
-import bgimg from '../../assets/img/contact-us.jpg'
-import classes from './ContactUs.module.css'
-import PageHeader from '../PageHeader/PageHeader'
-import { mouseContext } from '../../context/mouseContext'
-import contact from '../../assets/vector/contact-us.png'
 import axios from 'axios'
+import React, { useContext, useState } from 'react'
+import bgimg from '../../assets/img/contact-us.jpg'
+import contact from '../../assets/vector/contact-us.png'
+import { mouseContext } from '../../context/mouseContext'
+import PageHeader from '../PageHeader/PageHeader'
+import classes from './ContactUs.module.css'
 
 const ContactUs = () => {
     const [name, setName] = useState('')
@@ -46,7 +46,7 @@ const ContactUs = () => {
     <>
         <PageHeader heading="We Are Always With You" bgimg={bgimg} />
 
-        <h2 className={classes['contact-heading']}>Do you have any question on how <span style={{color: 'var(--primary-color)'}}>IQApex Labs</span> can help your business?</h2>
+        <h2 className={classes['contact-heading']} style={{color:"#B6EADA"}}>Do you have any question on how <span style={{color: 'var(--primary-color)'}}>IQApex Labs</span> can help your business?</h2>
 
         <div className={classes['contact-details']}>
             <form className={classes.form} onSubmit={submitHandler} method="POST" netlify>

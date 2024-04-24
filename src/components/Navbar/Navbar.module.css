@@ -1,51 +1,114 @@
-.navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: transparent;
-    height: 80px;
-    /* overflow-x: hidden; */
-    transition: all 0.2s ease-in;
-}
 
-.logo{
-    z-index: 99;
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Maintains logo and navlinks aligned vertically */
+  justify-content: space-between; /* Maintains logo on left */
+  background-color: transparent;
+  height: 80px;
+  transition: all 0.2s ease-in;
+  border: none;
 }
-
-.logo img{
-    height: 50px;
-    object-fit: cover;
-}
-
 .navlink-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
+    margin-right: auto;
+    margin-left: 25%;
+}
+.logo {
+  z-index: 99;
+  margin-left: 1rem; /* Maintains logo position */
 }
 
-.nav-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+.logo img {
+  height: 50px;
+  object-fit: cover;
 }
 
-.newClass{
-    transition: all 0.4s ease-in;
-    background: transparent;
+/* Removed the navlink-container class */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Spacing between navlinks */
+  flex: 1; /* Flex grows to fill remaining space between logo and button */
 }
 
-.show{
-    z-index: 99999;
-    position: fixed;
-    top: 0;
-    background-color: #eef8ff;
-    box-shadow: inset 1px -1px 1px lightgrey;
+.newClass {
+  transition: all 0.4s ease-in;
+  background: transparent;
+}
+
+.show {
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  background-color: #3D3D3D;
+ 
+}
+
+.contact-button {
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #007bff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 180px;
+  margin-left: 11rem;
+}
+
+.contact-button:hover {
+  color: var(--tertiary-color);
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Removed for horizontal layout */
+    align-items: flex-start; /* Maintains logo and navlinks aligned */
+    height: auto;
+  }
+
+  .logo {
+    margin: 0; /* Maintains logo position */
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav-links {
+    width: 100%; /* Maintains navlinks full width */
+    justify-content: space-between; /* Navlinks and button spread out */
+    gap: 1rem;
+  }
+
+  /* Removed margin from navlink-container (not used anymore) */
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    margin: 0 auto; /* Removes bottom positioning */
+    position: relative; /* Maintains position within navbar */
+    background: black;
+    width: auto; /* Allows width to adjust */
+    z-index: 99999;
+    padding: 8px 10px;
+    box-shadow: inset 0px 0px 6px -1px grey;
+    gap: 8px;
+    justify-content: space-between; /* Re-add spacing for contact button */
+  }
+
+  .contact-button {
+    margin-left: 0; /* Removed margin for better alignment */
+    margin-right: 1rem; /* Maintains spacing */
+  }
+}
+
+@media screen and (max-width: 1076px) {
     .navbar{
         justify-content: space-between;
     }
@@ -62,6 +125,13 @@
     .navlink-container{
         margin: 0 1rem;
     }
+    .contact-button {
+        margin-left: 0; /* Removed margin for better alignment */
+        margin-right: 1rem; /* Maintains spacing */
+      }
+      .IQ{
+        opacity: 0;
+      }
 }
 
 @media screen and (max-width: 576px) {
@@ -82,6 +152,13 @@
         justify-content: space-around;
         gap: 8px;
     } 
+    .IQ{
+      opacity: 0;
+    }
+    .contact-button {
+        margin-left: 0; /* Removed margin for better alignment */
+        margin-right: 1rem; /* Maintains spacing */
+      }
 }
 
 @media screen and (max-width: 392px) {
@@ -91,5 +168,7 @@
     .nav-links{
         width: 100%;
     }
+    .IQ{
+      opacity: 0;
+    }
 }
-

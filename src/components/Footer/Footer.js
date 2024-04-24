@@ -1,12 +1,12 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 // import logo from '../../assets/img/logo-footer.png'
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa'
+import { GrMail } from 'react-icons/gr'
+import { MdCall } from 'react-icons/md'
 import logo from '../../assets/img/iqapex-logo-3.png'
-import classes from './Footer.module.css'
-import {FaMapMarkerAlt, FaFacebook, FaInstagram, FaLinkedinIn} from 'react-icons/fa'
-import {GrMail} from 'react-icons/gr'
-import {MdCall} from 'react-icons/md'
 import { mouseContext } from '../../context/mouseContext'
+import classes from './Footer.module.css'
 import FooterCard from './FooterCard'
 
 const Footer = () => {
@@ -15,6 +15,8 @@ const Footer = () => {
   const expertiseArr = [['Product Engineering', 'product-engineering'], ['Expertise Solutions', 'expertise-solutions'], ['Talent Partnership', 'talent-partnership']]
   // const usefulArr = [['About Us', 'about-us'], ['Blogs', 'blogs'], ['Careers', 'careers']]
   const usefulArr = [['Careers', 'careers']]
+  const industries=[['Banking','banking '],['Education','education'],['Public Services']];
+  const prod=[['IQVerse','iqverse']]
 
   return (
     <footer className={classes['footer-container']}>
@@ -28,9 +30,7 @@ const Footer = () => {
 
           <div className={classes['card-container']}>
             
-            <FooterCard title='Our Expertise' links={expertiseArr} />
-            <FooterCard title='Useful Links' links={usefulArr} />
-
+           
             <div className={`${classes['footer-card']} ${classes.address}`}>
               <h3>Get in Touch</h3>
               <div className={classes.info}>
@@ -63,7 +63,17 @@ const Footer = () => {
           </div>
 
 
+
         </div>
+        <div className="cards" style={{display:"flex",gap:"3rem",margin:"2rem",flexWrap:"wrap",justifyContent:"space-evenly"}}>
+            <FooterCard title='Our Expertise' links={expertiseArr} />
+            <FooterCard title='Useful Links' links={usefulArr} />
+            <FooterCard title="Industries" links={industries}/>
+            <FooterCard title="Products and Platforms" links={prod}/>
+            
+
+        </div>
+
         <p className={classes.copyright}>&copy;2022 IQApex Labs, All Rights Reserved</p>
 
     </footer>

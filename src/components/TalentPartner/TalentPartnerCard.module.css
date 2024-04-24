@@ -8,6 +8,7 @@
 
 .card:nth-child(even){
     flex-direction: row-reverse;
+    color:white
 }
 
 .card:nth-child(odd){

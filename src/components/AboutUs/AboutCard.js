@@ -1,6 +1,6 @@
-import React, {useContext} from "react";
-import { mouseContext } from '../../context/mouseContext'
-import classes from './AboutCard.module.css'
+import React, { useContext } from "react";
+import { mouseContext } from '../../context/mouseContext';
+import classes from './AboutCard.module.css';
 
 const AboutCard = ({heading, subheading, Icon}) => {
   const {mouseEnterHandler, mouseLeaveHandler, className} = useContext(mouseContext)

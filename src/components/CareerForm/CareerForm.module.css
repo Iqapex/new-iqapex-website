@@ -3,6 +3,7 @@ h1{
     font-family: var(--poppins-font);
     font-weight: 700;
     margin: 4rem auto 1rem;
+    color:white;
 }
 
 .job-apply_form{

@@ -1,11 +1,11 @@
 import React from 'react'
 import About from '../components/About/About'
 import BackToTop from '../components/BackToTop'
-import ClientTestimonial from '../components/ClientTestimonial.js/ClientTestimonial'
 import Footer from '../components/Footer/Footer'
 // import GoToTop from '../components/GoToTop'
-import Header from '../components/Header/Header'
-import Impact from '../components/Impact/Impact'
+import Achievement from '../components/Achievements/Achievement'
+import Client from '../components/ClientTestimonial.js/Client'
+import Carousel from '../components/Header/Carousel'
 import Partner from '../components/Partner/Partner'
 import Services from '../components/Service/Service'
 
@@ -15,13 +15,14 @@ const Home = () => {
   return (
     <>
     {/* <GoToTop /> */}
-      <Header />
+      <Carousel/>
       <About />
       <Services />
       {/* <Product /> */}
-      <Impact />
+      <Achievement/>
       {/* <Testimonial /> */}
-      <ClientTestimonial />
+      <Client />
+   
       <Partner />
       <BackToTop/>
       <Footer />

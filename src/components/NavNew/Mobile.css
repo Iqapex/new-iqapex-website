@@ -1,0 +1,78 @@
+.mobile {
+  position: relative;
+  display:none;
+  
+  
+  
+}
+  
+  .mobile a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .mobile a:hover {
+    background-color: #444;
+  }
+  
+  .dropdownM {
+    position: relative;
+    cursor: pointer;
+    height: 2rem;
+  }
+  .dropdownM:hover {
+    background-color: #444;
+    
+  }
+  
+  
+  .dropdownM span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-contentM {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown content below the parent */
+    left: 0;
+    background-color: #333;
+    min-width: 200px;
+    align-self: flex-start; /* Adjust alignment */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  
+  
+  .dropdown-contentM.open {
+    display: block; /* Show dropdown content when the open class is applied */
+  }
+  
+  .dropdown-contentM a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .dropdown-contentM a:hover {
+    background-color: #444;
+  }
+  
+  .activeLink {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  @media (max-width:768px) {
+    .mobile{
+      
+      display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 2rem;
+  background-color: #333333b4;
+  top:-0.1rem;
+    }
+  }

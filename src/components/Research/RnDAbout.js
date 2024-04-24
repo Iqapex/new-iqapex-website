@@ -1,12 +1,12 @@
 import React from "react";
-import about from '../../assets/vector/rnd-about.png'
+import about from '../../assets/vector/rnd-about.png';
 import classes from "./RnDAbout.module.css";
 
 const RnDAbout = () => {
   return (
     <div className={classes["about-info"]}>
       <div className={classes["about-text"]}>
-        <p>
+        <p style={{color:"white"}}>
           We are an award-winning research and development company who offer
           workshops, practical training, hackathons, bootcamps, internships,
           masterclasses, tech clubs, and talk shows to diploma, bachelors, and

@@ -1,20 +1,18 @@
 import React from 'react'
-import PageHeader from '../PageHeader/PageHeader'
-import classes from './RndD.module.css'
+import { CgToolbox } from 'react-icons/cg'
+import { FaUserGraduate } from 'react-icons/fa'
+import { GiAtom } from 'react-icons/gi'
 import bgimg from '../../assets/img/rnd-bg.jpg'
-import RndDHexaCard from './RndDHexaCard'
-import {GiAtom} from 'react-icons/gi'
-import {FaUserGraduate} from 'react-icons/fa'
-import {CgToolbox} from 'react-icons/cg'
+import PageHeader from '../PageHeader/PageHeader'
 import Testimonial from '../Testimonial/Testimonial'
-import RnDOffers from './RnDOffers'
 import RnDAbout from './RnDAbout'
 import RnDCommunity from './RnDCommunity'
+import RnDOffers from './RnDOffers'
+import classes from './RndD.module.css'
+import RndDHexaCard from './RndDHexaCard'
 // import RnDMember from './RnDMember'
-import member1 from '../../assets/img/soumya.jpeg'
 // import member2 from '../../assets/img/kriti.png'
 // import member3 from '../../assets/img/samrat.PNG'
-import ProductItem from '../../components/OurProducts/ProductItem'
 
 const RndD = () => {
   return (
@@ -27,7 +25,7 @@ const RndD = () => {
           <RnDAbout />
         </div>
 
-        <div className={`${classes.about} ${classes['about-cards']}`}>
+        <div className={`${classes.about} ${classes['about-cards']}`} style={{backgroundColor:"white"}}>
           <h1>We Offer Research & Development Services for Corporates and Education for Youths</h1>
           <div className={classes.cards}>
             <RndDHexaCard heading="Research" content='The foundation of our business has always been research and innovation. We have been continually developing a number of patentable or patent-eligible technologies and academic/research articles.' Icon={GiAtom} />

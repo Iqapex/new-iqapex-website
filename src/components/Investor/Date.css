@@ -1,0 +1,38 @@
+/* Date.css */
+.date-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between date items */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align items to opposite ends */
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 2rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+   
+    align-items: center; /* Center items vertically */
+}
+
+.date {
+    font-weight: bold;
+    color:whitesmoke
+}
+.date-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.event {
+    margin-top: 5px;
+    color:whitesmoke
+}
