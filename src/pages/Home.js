@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <>
     {/* <GoToTop /> */}
+    
       <Carousel/>
       <About />
       <Services />

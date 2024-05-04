@@ -1,0 +1,29 @@
+.construction-message {
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .construction-message p {
+   top:-0.04rem;
+    position: absolute;
+    white-space: nowrap;
+    color: rgb(145, 37, 37);
+    font-size: large;
+    font-weight: bold;
+    animation: moveRight 10s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes moveRight {
+    from {
+      Right: 100%; /* Start from the right edge */
+    }
+    to {
+      Right: -100%; /* Move to the left edge */
+    }
+  }
+  

@@ -5,12 +5,16 @@ import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import comm from '../../assets/img/community.jpg';
 import focus from '../../assets/img/focused.jpg';
 import Nav from '../NavNew/Nav';
+import Temp from '../Temp';
 import classes from './Carousel.css';
 
 const Carousel = () => {
   return (
+    <>
+    <Temp/>
     <div className={classes.header}>
       <Nav />
+     
       <Swiper
         className={classes.swiper_container}
         loop={true} // Set loop to true for infinite loop
@@ -46,6 +50,7 @@ const Carousel = () => {
         {/* Add more SwiperSlide components as needed */}
       </Swiper>
     </div>
+    </>
   );
 };
 
