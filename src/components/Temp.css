@@ -6,29 +6,41 @@
     padding: 20px;
   }
   
-  .construction-message p {
+  .construction-message p  {
     top: -0.04rem;
     position: absolute;
     white-space: nowrap;
     color: rgb(145, 37, 37);
     font-size: large;
     font-weight: bold;
-    animation: moveRight 7s linear infinite;
-    animation-delay: 5s;
-  }
-  .second{
-    animation: moveRight 5s linear infinite;
-    animation-delay:7s;
+    left: -100%; /* Initial position outside of the viewport */
   }
   
-  @keyframes moveRight {
+  .first {
+    animation: moveRightFirst 6s linear infinite;
+    animation-delay: 1.8s; /* Start immediately */
+  }
+  
+  .second {
+    animation: moveRightSecond 6s linear infinite;
+    animation-delay: 5.2s; /* Start after first animation completes one iteration */
+  }
+  
+  @keyframes moveRightFirst {
     0% {
-      left: -100%; /* Start and end at the right edge */
-     /* Reset transform */
+      left: -100%; /* Start and end at the left edge */
     }
     100% {
-      left: 100%; /* Move to the left edge */
-     /* Move to the left edge */
+      left: 100%; /* Move to the right edge */
+    }
+  }
+  
+  @keyframes moveRightSecond {
+    0% {
+      left: -100%; /* Start and end at the left edge */
+    }
+    100% {
+      left: 100%; /* Move to the right edge */
     }
   }
   
