@@ -5,6 +5,8 @@ function Temp() {
   return (
     <div className="construction-message">
       <p>* The site is under construction *</p>
+      <p className='second'>* The site is under construction *</p>
+     
     </div>
   );
 }
