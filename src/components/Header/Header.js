@@ -101,7 +101,7 @@ const Header = () => {
           </SwiperSlide>
 
         </Swiper>
-     {/*  <Swiper
+      <Swiper
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
@@ -121,7 +121,7 @@ const Header = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>*/}
+      </Swiper>
       </div>
     </div>
   )

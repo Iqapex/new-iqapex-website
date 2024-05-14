@@ -64,12 +64,12 @@ const Nav = () => {
           {expandedLink === 'services' && (
             <div className="dropdown-content">
               <div className="submenu">
-                <NavLink to="#">Service 1</NavLink>
-                <NavLink to="#">Service 2</NavLink>
-                <NavLink to="#">Service 3</NavLink>
+                <NavLink to="/product-engineering">Production Engineering</NavLink>
+                <NavLink to="/expertise-solutions">Expertise Solutions</NavLink>
+                <NavLink to="/talent-partnership">Talent partnership</NavLink>
               </div>
               <div className="brief-paragraph">
-                <p>This is a brief paragraph about the services.</p>
+                <p>These are the services we provide</p>
               </div>
             </div>
           )}

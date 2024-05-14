@@ -47,7 +47,7 @@ const Carousel = () => {
             </div>
           </SwiperSlide>
         </div>
-        {/* Add more SwiperSlide components as needed */}
+        
       </Swiper>
     </div>
     </>

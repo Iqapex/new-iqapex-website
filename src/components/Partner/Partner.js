@@ -13,6 +13,9 @@ import nasscom from '../../assets/img/nasscom.jpg'
 import bita from '../../assets/img/bita.png'
 import bcc from '../../assets/img/bcc.jpg'
 import green from '../../assets/img/green.jpg'
+import ISI from '../../assets/img/ISI.png'
+import STPI from '../../assets/img/STPI.png'
+import STCHTT from '../../assets/img/STCHTT.png'
 import { mouseContext } from '../../context/mouseContext'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper";
@@ -36,6 +39,7 @@ const Partner = () => {
   <>
     <div className='section-title'>
       <h1 className='section-heading'>We Are Recognised & Trusted By</h1>
+      <br></br>
       <h5 className='section-subheading'>THE COUNT IS GOING ON</h5>
     </div>
     <div className={classes.partners}>
@@ -76,6 +80,9 @@ const Partner = () => {
           {createSlide(nasscom)}
           {createSlide(bita)}
           {createSlide(bcc)}
+          {createSlide(ISI)}
+          {createSlide(STCHTT)}
+          {createSlide(STPI)}
       </Swiper>
     </div>
   </>

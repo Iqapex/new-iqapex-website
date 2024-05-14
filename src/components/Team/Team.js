@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import member1 from '../../assets/avatar/client-3.png';
 import member2 from '../../assets/avatar/client-4.png';
+import arjun from '../../assets/img/arjun.jpeg'
 import './Team.css'; // Your custom CSS for Team section
 
 const TeamMember = ({ name, designation, image }) => (
@@ -45,9 +46,9 @@ const Team = () => {
       <Slider {...settings}>
         <div className="team-member-slide">
           <TeamMember
-            name="John Doe"
+            name="Arjun Dutta"
             designation="CEO"
-            image={member1}
+            image={arjun}
           />
         </div>
         <div className="team-member-slide">
