@@ -57,12 +57,15 @@
 }
 
 .carousel-text h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
+  color: rgb(10, 10, 9);
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  opacity: 100;
 }
 
 .carousel-text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Pagination styles */
