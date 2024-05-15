@@ -38,8 +38,8 @@ const Office = () => {
         <div className="slide-content">
           <img src={off1} alt="Office 1" className="office-image" />
           <div className="right-content">
-            <h2>San Francisco, CA</h2>
-            <p>In ac volutpat vulputate sit dapibus vulputate fames hendrerit hendrerit vulputate tortor velit viverra neque amet urna tempus.</p>
+            <h2> Kaikhali, Kolkata</h2>
+            <p> Mohan Kunja Apartment, Ground Floor, Biman Nagar, Kaikhali, Kolkata, West Bengal 700052</p>
             <div className="contact-info">
               <div className="info-item">
                 <FiMapPin />
@@ -47,11 +47,11 @@ const Office = () => {
               </div>
               <div className="info-item">
                 <FiPhone />
-                <span>(522) 862 - 1573</span>
+                <span>+91 87777 65809</span>
               </div>
               <div className="info-item">
                 <FiMail />
-                <span>sanfrancisco@techfy.com</span>
+                <span>contact@iqapexlabs.com</span>
               </div>
             </div>
           </div>
@@ -61,8 +61,8 @@ const Office = () => {
         <div className="slide-content">
           <img src={off2} alt="Office 2" className="office-image" />
           <div className="right-content">
-            <h2>New York, NY</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec feugiat velit. Phasellus vestibulum, lectus nec aliquet ullamcorper.</p>
+            <h2>Barrackpore, West Bengal</h2>
+            <p>Ashutosh Nagar, Vivekananda Road, North 24 Parganas, Barrackpore, West Bengal 743133</p>
             <div className="contact-info">
               <div className="info-item">
                 <FiMapPin />
@@ -70,39 +70,17 @@ const Office = () => {
               </div>
               <div className="info-item">
                 <FiPhone />
-                <span>(555) 123 - 4567</span>
+                <span>+91 87777 65809</span>
               </div>
               <div className="info-item">
                 <FiMail />
-                <span>newyork@techfy.com</span>
+                <span>contact@iqapexlabs.com</span>
               </div>
             </div>
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
-        <div className="slide-content">
-          <img src={off3} alt="Office 3" className="office-image" />
-          <div className="right-content">
-            <h2>Los Angeles, CA</h2>
-            <p>Quisque tincidunt lacus et velit sollicitudin, quis fermentum lorem ultrices. Cras in magna neque. Pellentesque habitant morbi tristique senectus.</p>
-            <div className="contact-info">
-              <div className="info-item">
-                <FiMapPin />
-                <span>456 Hollywood Blvd <br /> Los Angeles, California (CA), 90001</span>
-              </div>
-              <div className="info-item">
-                <FiPhone />
-                <span>(333) 456 - 7890</span>
-              </div>
-              <div className="info-item">
-                <FiMail />
-                <span>losangeles@techfy.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
+      
     </Swiper>
     </>
   );
