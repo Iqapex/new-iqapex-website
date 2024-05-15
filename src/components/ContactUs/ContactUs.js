@@ -73,10 +73,10 @@ const ContactUs = () => {
             <div className={classes['contact-img']}>
                 <img src={contact} alt="contact-us" />
             </div>
-{/* 
+{
             <div className={classes.map}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.3955569294408!2d88.37140561479265!3d22.601699485167796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02762513072639%3A0x6f41b087f0d9bb86!2sShyambazar%205%20Point%20Crossing%2C%20Baghbazar%2C%20Kolkata%2C%20West%20Bengal%20700003!5e0!3m2!1sen!2sin!4v1658739013846!5m2!1sen!2sin" title="map" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> */}
+                <iframe src="ttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.3955569294408!2d88.37140561479265!3d22.601699485167796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02762513072639%3A0x6f41b087f0d9bb86!2sShyambazar%205%20Point%20Crossing%2C%20Baghbazar%2C%20Kolkata%2C%20West%20Bengal%20700003!5e0!3m2!1sen!2sin!4v1658739013846!5m2!1sen!2sin" title="map" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> }
         </div>
     </>
   )

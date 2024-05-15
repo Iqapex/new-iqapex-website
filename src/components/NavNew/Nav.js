@@ -57,20 +57,21 @@ const Nav = () => {
           <NavLink to="/" className={selectedLink === '/' ? 'active' : ''}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/aboutUs" className={selectedLink === '/aboutUs' ? 'active' : ''}>About</NavLink>
+          <NavLink to="/aboutUs" className={selectedLink === '/aboutUs' ? 'active' : ''}>Who We Are</NavLink>
         </li>
         <li className="dropdown" onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={handleMouseLeave}>
-          <NavLink to="/services" className={selectedLink === '/services' ? 'active' : ''}>Services</NavLink>
+          <NavLink to="/services" className={selectedLink === '/services' ? 'active' : ''}>What We Do</NavLink>
           {expandedLink === 'services' && (
             <div className="dropdown-content">
               <div className="submenu">
-                <NavLink to="/product-engineering">Production Engineering</NavLink>
-                <NavLink to="/expertise-solutions">Expertise Solutions</NavLink>
-                <NavLink to="/talent-partnership">Talent partnership</NavLink>
+              
+              
+                <li><a href=''>Overview</a></li>
+                <li ><a href=''>Industries & Domains</a></li>
+                <li><a href=''>services</a></li>
+                <li><a href='/research-and-development'>Research & Innovation</a></li>
               </div>
-              <div className="brief-paragraph">
-                <p>These are the services we provide</p>
-              </div>
+              
             </div>
           )}
         </li>
@@ -93,7 +94,7 @@ const Nav = () => {
           <NavLink to="/research-and-development" className={selectedLink === '/research-and-development' ? 'active' : ''}>R&D</NavLink>
         </li>
         <li>
-          <NavLink to="/contact-us" className={selectedLink === '/contact-us' ? 'active' : ''}>Contact</NavLink>
+          <NavLink to="/contact-us" className={selectedLink === '/contact-us' ? 'active' : ''}>Contact Us</NavLink>
         </li>
       </ul>
       <div style={{display:"grid",position:"relative", width:"100vw" ,left:"-2rem",top:"-2rem"}} >

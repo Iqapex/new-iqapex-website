@@ -17,7 +17,7 @@ import RndDHexaCard from './RndDHexaCard'
 const RndD = () => {
   return (
     <>
-      <PageHeader heading="R&D Is Our Backbone" bgimg={bgimg} />
+      <PageHeader heading="Research & Developement Is Our Backbone" bgimg={bgimg} />
 
       <main className={classes.content}>
         <div className={classes.about}>
