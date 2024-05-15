@@ -129,7 +129,7 @@ const Partner = () => {
       images.map(image => (
         //console.log(image.img)
         <div style={{"width":'20vw',"height":"20vh","margin":"1rem 0"}}>
-          <img style={{"display":"block","width":"80%","height":"90%"}} src={image.img}></img>
+          <img style={{"display":"block","width":"80%","height":"90%","aspectRatio":"1/3"}} src={image.img}></img>
         </div>
       ))
     }

@@ -45,7 +45,7 @@ const Service = () => {
           // grabCursor={true}
           className={`${classes.swiper} mySwiper`}
         >
-
+         
           {createSlide("Web Development", '01')}
           {createSlide("App Development", '02')}
           {createSlide("Digital Marketing", '03')}

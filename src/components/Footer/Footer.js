@@ -16,7 +16,7 @@ const Footer = () => {
   // const usefulArr = [['About Us', 'about-us'], ['Blogs', 'blogs'], ['Careers', 'careers']]
   const usefulArr = [['Careers', 'careers'],['Announcements'],['Parters with us']]
   const industries=[['Information Technology'],['E-commerce'],['Ed-Tech'],['Agri-Tech'],['Health-Tech'],['Manufacturing'],['Retail'],['Travel & Logistics'],['Sustainability & Climate change'],['Investment & Seed support']];
-  const prod=[['AI'],['Cloud'],['Consulting'],['Data & Consulting'],['Creative Design'],['Digital Marketing & Branding'],['IQVerse','iqverse']]
+  const prod=[['AI'],['Cloud'],['Consulting'],['Data & Consulting'],['Creative Design','services'],['Digital Marketing & Branding'],['Website Development','services'],['Mobile App Development','services'],['IQVerse','iqverse']]
 
   return (
     <footer className={classes['footer-container']}>

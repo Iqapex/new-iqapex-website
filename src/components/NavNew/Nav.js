@@ -68,7 +68,7 @@ const Nav = () => {
               
                 <li><a href=''>Overview</a></li>
                 <li ><a href=''>Industries & Domains</a></li>
-                <li><a href=''>services</a></li>
+                <li><a href='/services'>Services</a></li>
                 <li><a href='/research-and-development'>Research & Innovation</a></li>
               </div>
               
@@ -84,17 +84,25 @@ const Nav = () => {
                 <NavLink to="#">Investor 2</NavLink>
                 <NavLink to="#">Investor 3</NavLink>
               </div>
-              <div className="brief-paragraph">
-                <p>This is a brief paragraph about the investors.</p>
-              </div>
+             
             </div>
           )}
         </li>
-        <li>
-          <NavLink to="/research-and-development" className={selectedLink === '/research-and-development' ? 'active' : ''}>R&D</NavLink>
-        </li>
-        <li>
+       
+        
+         
+        <li className="dropdown" onMouseEnter={() => handleMouseEnter('contact-us')} onMouseLeave={handleMouseLeave}>
           <NavLink to="/contact-us" className={selectedLink === '/contact-us' ? 'active' : ''}>Contact Us</NavLink>
+          {expandedLink === 'contact-us' && (
+            <div className="dropdown-content">
+              <div className="submenu">
+                <NavLink to="/contact-us">Contact Us </NavLink>
+                <NavLink to="/contact-us">Call Schedule</NavLink>
+                <NavLink to="/contact-us">Form</NavLink>
+              </div>
+             
+            </div>
+          )}
         </li>
       </ul>
       <div style={{display:"grid",position:"relative", width:"100vw" ,left:"-2rem",top:"-2rem"}} >
