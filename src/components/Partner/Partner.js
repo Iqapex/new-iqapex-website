@@ -18,10 +18,11 @@ import img7 from '../../assets/img/STPI.png'
 import img8 from '../../assets/partners/STPINEXT.png'
 import img10 from '../../assets/partners/agro.jpg'
 import img12 from '../../assets/partners/healing.png'
-import img11 from '../../assets/partners/iitkgpagribusinesstbi-withoutbg.png'
-import img15 from '../../assets/img/STCHTT.png'
+import img11 from '../../assets/partners/iitkgpagribusinesstbi.png'
+import img15 from '../../assets/partners/stcht.png'
 import img14 from '../../assets/img/bongobd.svg'
 import img13 from '../../assets/partners/zamsof.jpg'
+import img16 from '../../assets/partners/digital.png'
 
 
 import STCHTT from '../../assets/img/STCHTT.png'
@@ -90,7 +91,11 @@ const Partner = () => {
     },
     {
       "img":img15
-    }
+    },
+    {
+      "img":img16
+    },
+    
     
 
 
