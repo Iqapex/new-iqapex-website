@@ -44,7 +44,7 @@ const Carousel = () => {
             <img className="image" src={focus} alt="Image 2" style={{ height: "100vh", width: "100vw" ,aspectRatio:"16/9"}} />
             <div className="carousel-text">
               <h2>Your Passion, Our Creation</h2>
-              <p>We provide  Software Development tailored digital marketing solutions that help businesses increase their online visibility, engage their target audience, and drive conversions.</p>
+              <p>We provide tailored Software Development  and digital marketing solutions that help businesses increase their online visibility, engage their target audience, and drive conversions.</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
