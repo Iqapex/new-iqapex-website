@@ -19,7 +19,7 @@ const Carousel = () => {
       <Swiper
         className={classes.swiper_container}
         loop={true} // Set loop to true for infinite loop
-        autoplay={{ delay: 5000, pauseOnMouseEnter: true }}
+        autoplay={{ delay: 4500, pauseOnMouseEnter: false }}
         slidesPerView={1}
         speed={1000}
         pagination={{ clickable: true }}
