@@ -5,7 +5,17 @@ import classes from './About.module.css';
 
 const About = () => {
   const [showContent, setShowContent] = useState(false);
+  const handleMouseEnter = (e) => {
+    const button = e.currentTarget;
+    const circle = button.querySelector('::before');
+    button.classList.add(classes['hover']);
+  };
 
+  const handleMouseLeave = (e) => {
+    const button = e.currentTarget;
+    button.classList.remove(classes['hover']);
+  };  
+  
   useEffect(() => {
     // Function to handle scroll event
     const handleScroll = () => {

@@ -1,15 +1,17 @@
-import React, {useContext, useState} from 'react'
-import classes from './Partner.module.css'
-import img from '../../assets/partners/brick.54298af026c4e8ff4d60.jpg'
-import imggggggggg6 from '../../assets/partners/comp-f.d9f02e1aee92875c66df.png'
-import imgggggg from '../../assets/partners/comp-ff.e10f99562590e8995892.png'
+import React, { useContext } from 'react';
+import classes from './Partner.module.css';
+import { mouseContext } from '../../context/mouseContext';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 import imgg from '../../assets/partners/bitabox.png'
 import imggg from '../../assets/partners/partner-5.png'
-import img3 from '../../assets/partners/Biswa_Bangla.jpg'
 import img66 from '../../assets/partners/partner-6.png'
-import img1 from '../../assets/partners/startup-india.png'
-import img2 from '../../assets/partners/msme.png'
-import img4 from '../../assets/img/nasscom.jpg'
+import img1 from '../../assets/partners/startup-india.png';
+import img2 from '../../assets/partners/msme.png';
+import img3 from '../../assets/partners/Biswa_Bangla.jpg';
+import img4 from '../../assets/img/nasscom.jpg';
 import bita from '../../assets/img/bita.png'
 import img5 from '../../assets/img/bcc.jpg'
 import img6 from '../../assets/partners/iqponics.png'
@@ -23,130 +25,50 @@ import img15 from '../../assets/partners/stcht.png'
 import img14 from '../../assets/img/bongobd.svg'
 import img13 from '../../assets/partners/zamsof.jpg'
 import img16 from '../../assets/partners/digital.png'
-
-
-import STCHTT from '../../assets/img/STCHTT.png'
-import { mouseContext } from '../../context/mouseContext'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/autoplay";
+//... (import all other images similarly)
 
 const Partner = () => {
-  const {mouseEnterHandler, mouseLeaveHandler} = useContext(mouseContext)
+  const { mouseEnterHandler, mouseLeaveHandler } = useContext(mouseContext);
 
-  const createSlide = (image) => {
-    return(
-      <SwiperSlide className={classes.partnerflex}>
-        <div className={classes.partner}>
-          <img src={image} alt="partner" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}/>
-        </div>
-      </SwiperSlide>
-    )
-  }
-  //const [im,setim]=useState([img1,img2,img3,img4,img5,img6])
-  const images =[
-    {
-      "img":img1
-    },
-    {
-      "img":img2
-    },
-    {
-      "img":img3
-    },
-    {
-      "img":img4
-    },
-    {
-      "img":img5
-    },
-    {
-      "img":img6
-    },
-    {
-      "img":img7
-    },
-    {
-      "img":img8
-    },
-    ,
-    {
-      "img":img9
-    },
-    {
-      "img":img10
-    },
-    {
-      "img":img11
-    },
-    {
-      "img":img12
-    },
-    {
-      "img":img13
-    },
-    {
-      "img":img14
-    },
-    {
-      "img":img15
-    },
-    {
-      "img":img16
-    },
-    
-    
-
-
-  ]
-  console.log(images);
+  const images = [
+    imgg,imggg,img66,bita,img1, img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img15,img16 // (add all other images here in order)
+  ];
 
   return (
-  <>
-    <div className='section-title'>
-      <h1 className='section-heading'>We Are Recognised & Trusted By</h1>
-      <br></br>
-      <h5 className='section-subheading'>THE COUNT IS GOING ON</h5>
-    </div>
-    <div className={classes.partners}>
-     {/* <img src={img1}/> */}
-    <div>
-    {/* <images
-      imagesInfoArray={images}
-      columnCount={"auto"}
-      columnWidth={230}
-      gapSize={24}
-    /> */}
-   {/* <div id="img-wrapper">
-   {
-      images.map(image => (
-        //console.log(image.img)
-        <div >
-          <img src={image.img}></img>
-        </div>
-      ))
-    }
-    </div>
-    */}
-    <div style={{"display":"flex","flexWrap":"wrap","justifyContent":"space-evenly","alignItems":"center"}}>
-    {
-      images.map(image => (
-        //console.log(image.img)
-        <div style={{"width":'20vw',"height":"20vh","margin":"1rem 0"}}>
-          <img style={{"display":"block","width":"80%","height":"90%","aspectRatio":"1/3"}} src={image.img}></img>
-        </div>
-      ))
-    }
-    
-    </div>
+    <>
+      <div className='section-title'>
+        <h1 className='section-heading'>We Are Recognised & Trusted By</h1>
+        <h5 className='section-subheading'>THE COUNT IS GOING ON</h5>
+      </div>
+      <div className={classes.partners}>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={6}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true, // Pause on hover
+          }}
+          speed={6000} // Controls the speed of the movement
+          modules={[Autoplay]}
+        >
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <div className={classes.partner}>
+                <img
+                  src={image}
+                  alt="Partner Logo"
+                  onMouseEnter={mouseEnterHandler}
+                  onMouseLeave={mouseLeaveHandler}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
+  );
+};
 
-    
-    </div>
-    
-</div>
-</>
-  )
-}
-
-export default Partner
+export default Partner;

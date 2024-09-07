@@ -22,9 +22,8 @@ const Home = () => {
       {/* <Product /> */}
       <Achievement/>
       {/* <Testimonial /> */}
-      <Client />
-   
       <Partner />
+      <Client />      
       <BackToTop/>
       <Footer />
     </>
