@@ -3,7 +3,7 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import { Autoplay, Keyboard, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
-import clientImage from '../../assets/avatar/avatar-1.png';
+import clientImage from '../../assets/avatar/avatar.png';
 import './Client.css'; // Import custom CSS styles for testimonials
 
 const Client = () => {
