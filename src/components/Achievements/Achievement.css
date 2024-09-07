@@ -19,33 +19,42 @@
 
 /* Achievement card */
 .achievement-card {
-  border: 1px solid;
+  border: 2px solid transparent;
   border-image: linear-gradient(90deg, #c72eff, #462eff, #00c6d0) 1;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Achievement card hover effect */
 .achievement-card:hover {
-  cursor:pointer;
-  transform: scale(1.1);
-  opacity: 0.9;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px; 
+  transform: scale(1.05); /* Slightly reduced scale for a subtle effect */  
+  background-color: white; /* Change background color to white on hover */
+  border-color: #2469bc; /* Optional: change border color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Change text color for achievement number on card hover */
+.achievement-card:hover .achievement-number {
+  color: #2469bc; /* Change color to blue when background is white */
 }
 
 /* Achievement title */
 .achievement-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color:#2469bc;
+  color: #2469bc;
 }
 
 /* Achievement number */
 .achievement-number {
   font-size: 2rem;
   font-weight: bold;
-  color:white;
+  color: #2469bc; /* Changed color to blue for consistency with title */
 }
