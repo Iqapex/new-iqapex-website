@@ -6,7 +6,7 @@ import member1 from '../../assets/team/member1.jpg';
 import member2 from '../../assets/team/member2.png';
 import member3 from '../../assets/team/member3.jpeg';
 import member4 from '../../assets/team/member4.jpeg';
-// import member5 from '../../assets/team/member5.png';
+import member5 from '../../assets/team/member5.png';
 import member6 from '../../assets/team/member6.jpeg';
 import member7 from '../../assets/team/member7.jpeg';
 import member8 from '../../assets/team/member8.jpeg';
@@ -80,13 +80,13 @@ const Team = () => {
             image={member4}
           />
         </div>
-        {/* <div className="team-member-slide">
+         <div className="team-member-slide">
           <TeamMember
             name="Prabhat Singh"
             designation="Marketing Lead"
             image={member5}
           />
-        </div> */}
+        </div>
         <div className="team-member-slide">
           <TeamMember
             name="Subhabrata Pathak"
