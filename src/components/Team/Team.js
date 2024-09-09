@@ -2,9 +2,17 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import member1 from '../../assets/avatar/client-3.png';
-import member2 from '../../assets/avatar/client-4.png';
-import arjun from '../../assets/img/arjun.jpeg'
+import member1 from '../../assets/team/member1.jpg';
+import member2 from '../../assets/team/member2.png';
+import member3 from '../../assets/team/member3.jpeg';
+import member4 from '../../assets/team/member4.jpeg';
+// import member5 from '../../assets/team/member5.png';
+import member6 from '../../assets/team/member6.jpeg';
+import member7 from '../../assets/team/member7.jpeg';
+import member8 from '../../assets/team/member8.jpeg';
+import member9 from '../../assets/team/member9.jpg';
+import member10 from '../../assets/team/member10.jpeg';
+
 import './Team.css'; // Your custom CSS for Team section
 
 const TeamMember = ({ name, designation, image }) => (
@@ -47,29 +55,71 @@ const Team = () => {
         <div className="team-member-slide">
           <TeamMember
             name="Arjun Dutta"
-            designation="CEO"
-            image={arjun}
-          />
-        </div>
-        <div className="team-member-slide">
-          <TeamMember
-            name="Jane Smith"
-            designation="Marketing Manager"
+            designation="Founder & CEO"
             image={member1}
           />
         </div>
         <div className="team-member-slide">
           <TeamMember
-            name="Alice Johnson"
-            designation="Lead Developer"
+            name="NG Dutta"
+            designation="Co-Founder & Treasurer"
             image={member2}
           />
         </div>
         <div className="team-member-slide">
           <TeamMember
-            name="Bob Williams"
-            designation="Creative Director"
-            image={member2}
+            name="Madhumita Sarkar"
+            designation="Operations"
+            image={member3}
+          />
+        </div>
+        <div className="team-member-slide">
+          <TeamMember
+            name="Rahul Kumar"
+            designation="Supply-Chain Lead"
+            image={member4}
+          />
+        </div>
+        {/* <div className="team-member-slide">
+          <TeamMember
+            name="Prabhat Singh"
+            designation="Marketing Lead"
+            image={member5}
+          />
+        </div> */}
+        <div className="team-member-slide">
+          <TeamMember
+            name="Subhabrata Pathak"
+            designation="Hardware Advisor"
+            image={member6}
+          />
+        </div>
+        <div className="team-member-slide">
+          <TeamMember
+            name="Abhilekh Verma"
+            designation="Advisor"
+            image={member7}
+          />
+        </div>
+        <div className="team-member-slide">
+          <TeamMember
+            name="Viswajeet Kumar"
+            designation="Advisor"
+            image={member8}
+          />
+        </div>
+        <div className="team-member-slide">
+          <TeamMember
+            name="Ankur Bhattacharjee"
+            designation="Advisor"
+            image={member9}
+          />
+        </div>
+        <div className="team-member-slide">
+          <TeamMember
+            name="Sneha Shaw"
+            designation="HR"
+            image={member10}
           />
         </div>
         {/* Add more TeamMember components as needed */}
