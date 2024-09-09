@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
                 <div className={classes['info-card']}>
                     <span className={classes['circle-icon']}><MdCall className={classes.icon} /></span>
-                    <p>+91 87777 65809</p>
+                    <p>+91 62895 69385</p>
                 </div>
               </div>
               <div className={classes['social-media']}>
