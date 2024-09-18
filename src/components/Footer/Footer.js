@@ -15,18 +15,14 @@ const Footer = () => {
   const expertiseArr = [['Product Engineering', 'product-engineering'], ['Expertise Solutions', 'expertise-solutions'], ['Talent Partnership', 'talent-partnership']]
   // const usefulArr = [['About Us', 'about-us'], ['Blogs', 'blogs'], ['Careers', 'careers']]
   const usefulArr = [['Careers', 'careers'],['Announcements'],['Parters with us']]
-  const industries=[['Information Technology'],['E-commerce'],['Ed-Tech'],['Agri-Tech'],['Health-Tech'],['Manufacturing'],['Retail'],['Travel & Logistics'],['Sustainability & Climate change'],['Investment & Seed support']];
-  const prod=[['AI'],['Cloud'],['Consulting'],['Data & Consulting'],['Creative Design','services'],['Digital Marketing & Branding'],['Website Development','services'],['Mobile App Development','services'],['IQVerse','iqverse']]
+  const industries=[['Information Technology'],['E-commerce & Retail'],['AR/VR in Manufacturing'],['Travel & Logistics'],['Sustainability & Climate change']];
+  const prod=[['IT & Consulting'],['Creative Design','services'],['Digital Marketing & Branding'],['Website Development','services'],['Mobile App Development','services'],['IQVerse','iqverse']]
 
   return (
     <footer className={classes['footer-container']}>
 
         <div className={classes['footer-content']}>
-          <div className={classes.logo}>
-              <NavLink to='/' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-                  <img src={logo} alt="logo" />
-              </NavLink>
-          </div>
+          
 
           <div className={classes['card-container']}>
             
@@ -69,12 +65,12 @@ const Footer = () => {
             <FooterCard title='Our Expertise' links={expertiseArr} />
             <FooterCard title='Useful Links' links={usefulArr} />
             <FooterCard title="Industries" links={industries}/>
-            <FooterCard title="Services" links={prod}/>
+            
             
 
         </div>
 
-        <p className={classes.copyright}>&copy;2022 IQApex Labs, All Rights Reserved</p>
+        <p className={classes.copyright}>&copy; 2024 IQApex Labs, All Rights Reserved</p>
 
     </footer>
   )
