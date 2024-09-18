@@ -10,14 +10,66 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
+
+.cards {
+    /* ... other styles */
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to avoid overflow */
+    gap: 3rem;
+  }
 
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, minmax(160px, 1fr));
     justify-items: center;
 }
+
+
+.footer-container {
+    /* existing styles */
+  }
+  
+  .footer-content {
+    /* existing styles */
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .footer-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  
+  .address {
+    /* You may need to adjust some styles here to fit the new layout */
+  }
+  
+  /* Rest of your existing styles */
+  
+  @media (max-width: 1200px) {
+    .footer-columns {
+      justify-content: flex-start;
+    }
+    
+    .footer-card {
+      flex-basis: calc(50% - 1rem);
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-card {
+      flex-basis: 100%;
+    }
+  }
 
 .footer-card h3 {
     color: var(--tertiary-color);
