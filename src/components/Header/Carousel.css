@@ -1,4 +1,4 @@
-/* Reset styles */
+/* General Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,58 +21,23 @@
   overflow: hidden;
 }
 
-/* Navbar styles */
-
-
-/* Swiper container styles */
+/* Swiper container */
 .swiper_container {
   width: 100%;
   height: 100%;
-  
 }
 
-.swiper-slide:hover{
-  cursor: pointer;
-  .carousel-text{
-    transform: scale(1.2) translate(-50%, -50%);
-    
-   
-  }
-  .image{
-    filter: brightness(105%);
-   
-  }
-}
-
-/* Slide text styles */
+/* Slide text */
 .carousel-text {
   position: absolute;
   top: 50%;
   left: 50%;
- transform:  translate(-50%, -50%);
-
-  color:rgb(24, 22, 22);
+  transform: translate(-50%, -50%);
+  color: rgb(24, 22, 22);
   z-index: 10;
   text-align: center;
   font-size: 20px;
   transition: transform 0.5s ease;
-  
-}
-
-/* Zoom effect on hover */
-.swiper-slide:hover .carousel-text {
-  transform: scale(1.1) translate(-50%, -50%); /* Scale up slightly */
-  
-}
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .carousel-text {
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(90px);
-    background-color: rgba(255, 255, 255, 0.5);  
-    opacity: 80%;
-    border-radius: 25px;
-  }
 }
 
 .carousel-text h2 {
@@ -80,40 +45,56 @@
   margin-bottom: 10px;
   color: rgb(10, 10, 11);
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
-  opacity: 100;
 }
 
 .carousel-text p {
   font-size: 1.2rem;
 }
 
-/* Pagination styles */
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .carousel-text {
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ensures text doesn't overflow */
+  }
 
+  .carousel-text h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
 
+  .carousel-text p {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
 
-
-/* Navigation button styles */
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-
-  color:white;
-  border-radius: 50%;
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .swiper-slide img {
+    width: 100vw; /* Ensures images fit the mobile width */
+    height: auto; /* Let the height adjust based on width */
+  }
 }
 
-.swiper-button-prev {
-  left: 10px;
+/* Media Query for Smaller Mobile Screens */
+@media only screen and (max-width: 480px) {
+  .carousel-text h2 {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .carousel-text p {
+    font-size: 0.9rem; /* Further reduce paragraph size */
+  }
 }
 
-.swiper-button-next {
-  right: 10px;
+/* Zoom effect on hover */
+.swiper-slide:hover .carousel-text {
+  transform: scale(1.1) translate(-50%, -50%);
+}
+
+/* Blur background and style for text */
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .carousel-text {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(90px);
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 80%;
+    border-radius: 25px;
+  }
 }
