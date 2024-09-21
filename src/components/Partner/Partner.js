@@ -25,13 +25,14 @@ import img15 from '../../assets/partners/stcht.png'
 import img14 from '../../assets/img/bongobd.svg'
 import img13 from '../../assets/partners/zamsof.jpg'
 import img16 from '../../assets/partners/digital.png'
+import img17 from '../../assets/partners/phonepay.webp'
 //... (import all other images similarly)
 
 const Partner = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(mouseContext);
 
   const images = [
-    img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img15,img16 // (add all other images here in order)
+    img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img15,img16,img17 // (add all other images here in order)
   ];
 
   return (
@@ -72,4 +73,3 @@ const Partner = () => {
 };
 
 export default Partner;
-
