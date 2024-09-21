@@ -54,8 +54,8 @@ const Partner = () => {
           breakpoints={{
             // Mobile and smaller screens
             640: {
-              slidesPerView: 2,  // Show 2 logos on small screens
-              spaceBetween: 20,  // Adjust spacing between slides
+              slidesPerView: 5,  // Show 2 logos on small screens
+              spaceBetween: 10,  // Adjust spacing between slides
             },
             // Tablets
             768: {
