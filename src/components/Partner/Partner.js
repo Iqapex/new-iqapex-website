@@ -42,52 +42,53 @@ const Partner = () => {
         <h5 className='section-subheading'>THE COUNT IS GOING ON</h5>
       </div>
       <div className={classes.partners}>
-        <Swiper
-          spaceBetween={30}
-          loop={true}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          speed={6000}
-          breakpoints={{
-            // Mobile and smaller screens
-            640: {
-              slidesPerView: 5,  // Show 2 logos on small screens
-              spaceBetween: 10,  // Adjust spacing between slides
-            },
-            // Tablets
-            768: {
-              slidesPerView: 3,  // Show 3 logos on tablets
-              spaceBetween: 30,
-            },
-            // Larger screens
-            1024: {
-              slidesPerView: 5,  // Show 5 logos on desktops
-              spaceBetween: 40,
-            },
-            // Very large screens
-            1280: {
-              slidesPerView: 6,  // Show 6 logos on larger screens
-              spaceBetween: 50,
-            },
-          }}
-          modules={[Autoplay]}
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className={classes.partner}>
-                <img
-                  src={image}
-                  alt="Partner Logo"
-                  onMouseEnter={mouseEnterHandler}
-                  onMouseLeave={mouseLeaveHandler}
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <Swiper
+  spaceBetween={30}
+  loop={true}
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  speed={6000}
+  breakpoints={{
+    320: {   // Very small mobile screens
+      slidesPerView: 2,  // Show 2 logos
+      spaceBetween: 10,  // Smaller space between logos
+    },
+    480: {   // Small mobile screens
+      slidesPerView: 3,  // Show 3 logos
+      spaceBetween: 15,  // Adjust space between logos
+    },
+    640: {   // Medium mobile screens
+      slidesPerView: 4,  // Show 4 logos
+      spaceBetween: 20,
+    },
+    768: {   // Tablets
+      slidesPerView: 5,  // Show 5 logos
+      spaceBetween: 30,
+    },
+    1024: {  // Desktop
+      slidesPerView: 6,  // Show 6 logos
+      spaceBetween: 40,
+    },
+  }}
+  modules={[Autoplay]}
+>
+  {images.map((image, index) => (
+    <SwiperSlide key={index}>
+      <div className={classes.partner}>
+        <img
+          src={image}
+          alt="Partner Logo"
+          onMouseEnter={mouseEnterHandler}
+          onMouseLeave={mouseLeaveHandler}
+        />
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
     </>
   );
