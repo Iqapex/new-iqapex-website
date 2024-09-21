@@ -26,7 +26,7 @@ import img14 from '../../assets/img/bongobd.svg'
 import img13 from '../../assets/partners/zamsof.jpg'
 import img16 from '../../assets/partners/digital.png'
 import img17 from '../../assets/partners/phonepay.webp'
-//... (import all other images similarly)
+// (import all other images similarly)
 
 const Partner = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(mouseContext);
@@ -44,14 +44,35 @@ const Partner = () => {
       <div className={classes.partners}>
         <Swiper
           spaceBetween={30}
-          slidesPerView={6}
           loop={true}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true, // Pause on hover
+            pauseOnMouseEnter: true,
           }}
-          speed={6000} // Controls the speed of the movement
+          speed={6000}
+          breakpoints={{
+            // Mobile and smaller screens
+            640: {
+              slidesPerView: 2,  // Show 2 logos on small screens
+              spaceBetween: 20,  // Adjust spacing between slides
+            },
+            // Tablets
+            768: {
+              slidesPerView: 3,  // Show 3 logos on tablets
+              spaceBetween: 30,
+            },
+            // Larger screens
+            1024: {
+              slidesPerView: 5,  // Show 5 logos on desktops
+              spaceBetween: 40,
+            },
+            // Very large screens
+            1280: {
+              slidesPerView: 6,  // Show 6 logos on larger screens
+              spaceBetween: 50,
+            },
+          }}
           modules={[Autoplay]}
         >
           {images.map((image, index) => (
