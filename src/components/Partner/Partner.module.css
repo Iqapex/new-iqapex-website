@@ -31,9 +31,44 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow for highlighting */
 }
 
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+    .partners {
+        margin: 0 0.5rem 3rem; /* Adjust margin for smaller screens */
+    }
+    
+    .swiper-slide {
+        justify-content: space-around;
+    }
+
+    .partner {
+        width: 150px; /* Adjust size for tablet */
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partner {
+        width: 130px; /* Smaller size for tablet and small laptops */
+        height: 130px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .partner {
         width: 120px; /* Smaller size for mobile */
-        height: 120px; /* Smaller size for mobile */
+        height: 120px;
+    }
+}
+
+/* For very small screens like phones */
+@media screen and (max-width: 480px) {
+    .swiper-slide {
+        justify-content: center;
+    }
+    
+    .partner {
+        width: 100px; /* Further reduce size for small phones */
+        height: 100px;
     }
 }
