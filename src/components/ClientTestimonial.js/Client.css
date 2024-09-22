@@ -35,7 +35,7 @@
 }
 
 .client-image {
-  width: 80px;
+  width: 80px; /* Default size for larger screens */
   height: 80px;
   border-radius: 50%;
   position: relative;
@@ -43,37 +43,20 @@
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 1rem;
-}
-
-.testimonial-text {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-}
-
-.testimonial-author {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #2469bc;
-}
-
-.testimonial-company {
-  font-size: 1rem;
-  color: #777;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .testimonial {
-    padding: 1.5rem; /* Reduce padding for mobile */
+    padding: 1.5rem; /* Adjust padding for smaller screens */
   }
 
   .client-image {
-    width: 60px; /* Smaller image size for mobile */
-    height: 60px;
-    top: -30px;
+    width: 50px; /* Reduce the size of client image on mobile */
+    height: 50px; /* Maintain a square ratio */
+    top: 0; /* Adjust vertical positioning for smaller screens */
+    margin-bottom: 1rem; /* Ensure adequate space between image and text */
   }
 
   .section-heading {
@@ -81,23 +64,23 @@
   }
 
   .testimonial-text {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Adjust text size for better readability on small screens */
   }
 
   .testimonial-author {
-    font-size: 1rem;
+    font-size: 1rem; /* Slightly reduce the font size for mobile */
   }
 
   .testimonial-company {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 
   .testimonial-slider {
-    width: 100%; /* Ensure it fits mobile screen width */
+    width: 100%; /* Ensure slider width fits the screen */
   }
 }
 
 .swiper-button-next, .swiper-button-prev {
   background-color: transparent;
-  color: #2469bc;
+  color: #2469bc; /* Color for navigation buttons */
 }
