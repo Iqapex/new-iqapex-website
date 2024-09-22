@@ -53,8 +53,8 @@
   }
 
   .client-image {
-    width: 50px; /* Reduce the size of client image on mobile */
-    height: 50px; /* Maintain a square ratio */
+    width: 30px; /* Reduce the size of client image on mobile */
+    height: 30px; /* Maintain a square ratio */
     top: 0; /* Adjust vertical positioning for smaller screens */
     margin-bottom: 1rem; /* Ensure adequate space between image and text */
   }
