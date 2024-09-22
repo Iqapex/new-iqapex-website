@@ -11,27 +11,48 @@
 }
 
 .testimonial-slider {
-  max-width: 100%; /* Ensure the slider doesn't exceed screen width */
-  width: 90%; /* Adjust width to fit smaller screens */
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .testimonial {
-  background-color: transparent;
+  background-color: transparent; /* Initial background color */
   border-radius: 8px;
-  padding: 2rem; /* Adjust padding to be mobile-friendly */
+  padding: 8rem; /* Adjust padding */
   text-align: left;
-  position: relative;
-  margin-bottom: 2rem;
-  border: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
+  position: relative; /* Position relative for absolute positioning of the image */
+  margin-bottom: 2rem; /* Margin between testimonials */
+  border: 2px solid transparent; /* Initial border */
+  transition: all 0.3s ease-in-out; /* Smooth transition for background, border, and size changes */
 }
 
 .testimonial:hover {
-  background-color: #fff;
-  border-color: #2469bc;
-  transform: scale(1.05);
+  background-color: #fff; /* White background on hover */
+  border-color: #2469bc; /* Visible border color on hover */
+  
+  transform: scale(1.05); /* Slightly enlarge the slide on hover */
   border-radius: 20px;
+}
+
+
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #333; /* Adjust text color for better visibility on white background */
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2469bc; /* Adjust text color */
+}
+
+.testimonial-company {
+  font-size: 1rem;
+  color: #777; /* Adjust text color */
 }
 
 .client-image {
@@ -53,9 +74,9 @@
   }
 
   .client-image {
-    width: 30px; /* Reduce the size of client image on mobile */
-    height: 30px; /* Maintain a square ratio */
-    top: 0; /* Adjust vertical positioning for smaller screens */
+    width: 20px; /* Reduce the size of client image on mobile */
+    height: 20px; /* Maintain a square ratio */
+    top: 0; /* Adjust positioning for smaller screens */
     margin-bottom: 1rem; /* Ensure adequate space between image and text */
   }
 
@@ -79,6 +100,7 @@
     width: 100%; /* Ensure slider width fits the screen */
   }
 }
+
 
 .swiper-button-next, .swiper-button-prev {
   background-color: transparent;
