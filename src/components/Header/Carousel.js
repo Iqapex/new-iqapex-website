@@ -12,7 +12,7 @@ import classes from './Carousel.css';
 const Carousel = () => {
   return (
     <>
-    <Temp/>
+    
     <div className={classes.header}>
       <Nav />
      
