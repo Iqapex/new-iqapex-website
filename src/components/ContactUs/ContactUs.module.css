@@ -30,8 +30,8 @@
 }
 
 .form p{
-    text-align: center;
-    font-weight: bold;
+    text-align:start;
+    font-weight: semibold;
     font-size: 18px;
     color: var(--primary-color);
     padding-bottom: 1rem;

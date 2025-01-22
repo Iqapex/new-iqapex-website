@@ -49,34 +49,21 @@ const ContactUs = () => {
         <h2 className={classes['contact-heading']} style={{color:"#B6EADA"}}>Do you have any question on how <span style={{color: 'var(--primary-color)'}}>IQApex Labs</span> can help your business?</h2>
 
         <div className={classes['contact-details']}>
-            <form className={classes.form} onSubmit={submitHandler} method="POST" netlify>
-                <p>Send your query and we’ll reach out to you shortly</p>
-                <input type="hidden" name="form-name" value="contact-form" />
+            <form className={classes.form}>
                 <div className={classes['form-input']}>
-                    <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required autoComplete='off'/>
-                    <label>Full Name <span style={{color: 'red'}}>*</span></label>
+                    <h3 className={classes['contact-heading']} style={{color:"#B6EADA"}}>Dear Sir/Ma'am,</h3>
+                    
+                    <p style={{color:"#F5F5F5"}}>We are thrilled to assist you with your enquiries and help you achieve your business goals. Please feel free to contact us via the email or by mobile no. .</p>
+                    <h4 style={{color:"#F5F5F5"}}>IQApex Labs</h4>
+                    <p style={{color:"#F5F5F5"}}>Email: contact@iqapexlabs.com or contact.iqapexlabs.com</p>
+                    <p style={{color:"#F5F5F5"}}>Mobile: +91 6289569385</p>
+                    
                 </div>
-                <div className={classes['form-input']}>
-                    <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete='off' />
-                    <label>Email Address <span style={{color: 'red'}}>*</span></label>
-                </div>
-                <div className={classes['form-input']}>
-                    <textarea cols="30" rows="5" value={message} name="message" onChange={(e) => setMessage(e.target.value)} required autoComplete='off'></textarea>
-                    <label>Message <span style={{color: 'red'}}>*</span></label>
-                </div>
-                <div className='button' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-                    <button className={classes.btn}>Submit</button>
-                </div>
-                {displayMessage !== '' && <h4 style={{color: 'red'}}>{displayMessage}</h4>}
             </form>
 
             <div className={classes['contact-img']}>
                 <img src={contact} alt="contact-us" />
             </div>
-{
-            <div className={classes.map}>
-                <iframe src="ttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.3955569294408!2d88.37140561479265!3d22.601699485167796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02762513072639%3A0x6f41b087f0d9bb86!2sShyambazar%205%20Point%20Crossing%2C%20Baghbazar%2C%20Kolkata%2C%20West%20Bengal%20700003!5e0!3m2!1sen!2sin!4v1658739013846!5m2!1sen!2sin" title="map" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> }
         </div>
     </>
   )
